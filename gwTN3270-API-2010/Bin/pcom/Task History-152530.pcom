@@ -1,0 +1,24 @@
+1920	0024	0080	       Actions GoTo Index Options Help                                          
+ sssssssssssssssssssssssssssssssssssssssssssssssssssssssss 06/24/08  3:26:11 PM 
+ KC2T02D                      Task History Details               Region: CICSTT 
+                                                                      Auto(Off) 
+ EsssssssssssssssssssssssssssssssssssssPssssssssssssssssssssssssssssssssssssssN 
+ e   Task number  . . . . : 25698      e   Transaction ID . . . . : PCIC      e 
+ e   Facility ID  . . . . : T156       e   CICS transaction ID  . : PCIC      e 
+ e   Facility type  . . . : Term       e                                      e 
+ e   VTAM netname . . . . : TCPT156    e   Primary program ID . . : CPOXCTL   e 
+ e   Userid . . . . . . . : PSHAO      e   HWM storage used >16M  : 66K       e 
+ e   CPU time . . . . . . : 0.001s     e   HWM storage used <16M  : 16K       e 
+ e                                     e   Response time  . . . . : 0.001s    e 
+ DsssssssssssssssssssssssssssssssssssssGssssssssssssssssssssssssssssssssssssssM 
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+ (Details)  <Storage>  <Timings>  <Statistics>  <Task Terminal>                 
+ F1=Help  F2=Keys    F3=Exit  F5=Refresh  F6=Console F10=Action Bar  F11=Print  
+ F15=Region Status  PA1=Switch                                                  	0061	0001	0005	À	0007	0007	È	0015	0004	È	0020	0005	È	0026	0007	È	0034	0004	È	0039	0040	è	0080	0000	à	0081	0057	è	0139	0020	à	0160	0000	à	0161	0007	à	0169	0055	à	0225	0014	à	0240	0000	à	0241	0078	à	0320	0118	à	0439	0002	à	0442	0035	à	0478	0004	à	0483	0001	À	0485	0022	è	0508	0010	à	0519	0001	à	0521	0001	À	0523	0024	è	0548	0009	à	0558	0040	à	0599	0079	à	0679	0001	à	0681	0001	À	0683	0024	è	0708	0009	à	0718	0039	à	0758	0039	à	0798	0029	à	0828	0010	à	0839	0038	à	0878	0007	à	0886	0073	à	0960	0079	à	1040	0079	à	1120	0079	à	1200	0079	à	1280	0079	à	1360	0079	à	1440	0079	à	1520	0079	à	1600	0080	à	1681	0009	à	1691	0000	à	1692	0009	À	1702	0000	à	1703	0009	À	1713	0000	à	1714	0012	À	1727	0000	à	1728	0015	À	1744	0016	à	1761	0079	à	1841	0079	à

@@ -1,0 +1,24 @@
+1920	0024	0080	       Actions GoTo View Index Options Help                                     
+ sssssssssssssssssssssssssssssssssssssssssssssssssssssssss 06/24/08  3:22:02 PM 
+ KC2T01D                          Task History                   Region: CICSTT 
+ Fastpath: =H                                                         Auto(Off) 
+ EssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssN 
+ e   Search  range . .  00/00/00   00:00:00    to    00/00/00   00:00:00      e 
+ e   Display range . .  06/24/08   15:09:27    to    06/24/08   15:09:27      e 
+ DssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssM 
+   T=Trace                                                        More:   +     
+ EssssssssssssPssssssPsssssssPssssssPssssssPssssssssPsssssssssPssssssssPssssssN 
+ e   Task     e Tran e  Task e Term e  CPU e  Resp  e Storage e   File e Abende 
+ e   End Time e ID   eNumber e ID   e Time e  Time  e     HWM e    I/O e Code e 
+ FssssssssssssLssssssLsssssssLssssssLssssssLssssssssLsssssssssLssssssssLssssssO 
+ e   15:09:27 e PCIC e 25698 e T156 e   .0 e     0.0e   85200 e      0 e      e 
+ e   15:09:27 e PCIC e 25697 e T170 e   .0 e     0.0e   85200 e      0 e      e 
+ e   15:09:27 e PCIC e 25696 e T156 e   .0 e     0.0e   93072 e      2 e      e 
+ e   15:09:27 e PCIC e 25695 e T170 e   .0 e     0.0e   93072 e      2 e      e 
+ e   15:09:27 e PCIC e 25694 e T156 e   .0 e     0.0e   87072 e      1 e      e 
+ e   15:09:27 e PCIC e 25692 e T170 e   .0 e     0.0e   87072 e      1 e      e 
+ e   15:09:27 e PCIC e 25690 e T160 e   .0 e     0.0e   85200 e      0 e      e 
+ e   15:09:27 e PCIC e 25689 e T156 e   .0 e     0.0e   86880 e      2 e      e 
+ DssssssssssssGssssssGsssssssGssssssGssssssGssssssssGsssssssssGssssssssGssssssM 
+ F1=Help  F2=Keys    F3=Exit  F5=Refresh  F6=Console **=Bkwd  F8=Fwd            
+ F10=Action Bar  F11=Print  F15=Region Status  PA1=Switch                       	0167	0001	0005	À	0007	0007	È	0015	0004	È	0020	0004	È	0025	0005	È	0031	0007	È	0039	0004	È	0044	0035	è	0080	0000	à	0081	0057	è	0139	0020	à	0160	0000	à	0161	0007	à	0169	0055	à	0225	0014	à	0240	0000	à	0241	0182	à	0424	0008	À	0433	0001	à	0435	0008	À	0444	0008	à	0453	0008	À	0462	0001	à	0464	0008	À	0473	0039	à	0513	0010	à	0524	0017	à	0542	0010	à	0553	0166	à	0720	0079	à	0800	0000	à	0801	0078	à	0880	0000	à	0881	0078	à	0960	0000	à	0961	0078	à	1040	0000	à	1041	0001	à	1043	0001	À	1045	0008	è	1054	0001	à	1056	0004	à	1061	0007	à	1069	0006	à	1076	0006	à	1083	0010	à	1094	0007	à	1102	0002	à	1105	0005	à	1111	0001	à	1113	0004	à	1118	0001	à	1120	0000	à	1121	0001	à	1123	0001	À	1125	0008	è	1134	0001	à	1136	0004	à	1141	0007	à	1149	0006	à	1156	0006	à	1163	0010	à	1174	0007	à	1182	0002	à	1185	0005	à	1191	0001	à	1193	0004	à	1198	0001	à	1200	0000	à	1201	0001	à	1203	0001	À	1205	0008	è	1214	0001	à	1216	0004	à	1221	0007	à	1229	0006	à	1236	0006	à	1243	0010	à	1254	0007	à	1262	0002	à	1265	0005	à	1271	0001	à	1273	0004	à	1278	0001	à	1280	0000	à	1281	0001	à	1283	0001	À	1285	0008	è	1294	0001	à	1296	0004	à	1301	0007	à	1309	0006	à	1316	0006	à	1323	0010	à	1334	0007	à	1342	0002	à	1345	0005	à	1351	0001	à	1353	0004	à	1358	0001	à	1360	0000	à	1361	0001	à	1363	0001	À	1365	0008	è	1374	0001	à	1376	0004	à	1381	0007	à	1389	0006	à	1396	0006	à	1403	0010	à	1414	0007	à	1422	0002	à	1425	0005	à	1431	0001	à	1433	0004	à	1438	0001	à	1440	0000	à	1441	0001	à	1443	0001	À	1445	0008	è	1454	0001	à	1456	0004	à	1461	0007	à	1469	0006	à	1476	0006	à	1483	0010	à	1494	0007	à	1502	0002	à	1505	0005	à	1511	0001	à	1513	0004	à	1518	0001	à	1520	0000	à	1521	0001	à	1523	0001	À	1525	0008	è	1534	0001	à	1536	0004	à	1541	0007	à	1549	0006	à	1556	0006	à	1563	0010	à	1574	0007	à	1582	0002	à	1585	0005	à	1591	0001	à	1593	0004	à	1598	0001	à	1600	0000	à	1601	0001	à	1603	0001	À	1605	0008	è	1614	0001	à	1616	0004	à	1621	0007	à	1629	0006	à	1636	0006	à	1643	0010	à	1654	0007	à	1662	0002	à	1665	0005	à	1671	0001	à	1673	0004	à	1678	0001	à	1680	0080	à	1761	0079	à	1841	0079	à

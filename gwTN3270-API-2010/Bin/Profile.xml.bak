@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Profile>
+	<Logging MessageLevel="7" LogLevel="7" Path=".\Log" ChannelLog="false"/>
+	<Broadcast Enable="false" Address="234.1.1.107:5120"/>
+	<Gateway Name="PrimaryGateway" Protocol="tcp" Address="10.142.9.55:10008"/>
+	<Entity Name="Tester" Type="Client" Class="Cardlink" PseudoName="true">
+		<TimeToArrive>300</TimeToArrive>
+		<TimeToResponse>300</TimeToResponse>
+		<TicketTimeout>180</TicketTimeout>
+		<FixedResourceCount>10</FixedResourceCount>
+		<DynamicResourceCount>0</DynamicResourceCount>
+		<MaxQueuedRequest>100</MaxQueuedRequest>
+                <Capability>Normal</Capability>
+	</Entity>
+	<Entity Name="Cardlink.01" Type="Client" Class="Cardlink111" PseudoName="true">
+		<TimeToArrive>300</TimeToArrive>
+		<TimeToResponse>300</TimeToResponse>
+		<TicketTimeout>180</TicketTimeout>
+		<FixedResourceCount>10</FixedResourceCount>
+		<DynamicResourceCount>0</DynamicResourceCount>
+		<MaxQueuedRequest>100</MaxQueuedRequest>
+                <Capability>Normal</Capability>  
+	</Entity>
+	<Entity name="UMS01" Type="Client" Class="Cardlink" PseudoName="true">
+		<TimeToArrive>300</TimeToArrive>
+		<TimeToResponse>300</TimeToResponse>
+		<TicketTimeout>180</TicketTimeout>
+		<FixedResourceCount>10</FixedResourceCount>
+		<DynamicResourceCount>0</DynamicResourceCount>
+		<MaxQueuedRequest>200</MaxQueuedRequest>
+	</Entity>
+	<Channel Name="StandAloneChannel">
+		<AccumulatedError>0</AccumulatedError>
+		<ErrorPerInterval>16</ErrorPerInterval>
+		<ErrorInterval>60</ErrorInterval>
+		<AckInterval>5</AckInterval>
+		<AckCount>20</AckCount>
+		<Timeout>5</Timeout>
+	</Channel>
+</Profile>

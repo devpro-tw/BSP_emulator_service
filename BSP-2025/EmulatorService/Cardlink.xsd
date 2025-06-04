@@ -1,0 +1,1898 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TaskHistory_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Task_x0020_number" type="xs:string" minOccurs="0" />
+              <xs:element name="Facility_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Facility_x0020_type" type="xs:string" minOccurs="0" />
+              <xs:element name="VTAM_x0020_netname" type="xs:string" minOccurs="0" />
+              <xs:element name="Userid" type="xs:string" minOccurs="0" />
+              <xs:element name="CPU_x0020_time" type="xs:string" minOccurs="0" />
+              <xs:element name="Transaction_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CICS_x0020_transaction_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Primary_x0020_program_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="HWM_x0020_storage_x0020_used_x0020__x003E_16M" type="xs:string" minOccurs="0" />
+              <xs:element name="HWM_x0020_storage_x0020_used_x0020__x003C_16M" type="xs:string" minOccurs="0" />
+              <xs:element name="Response_x0020_time" type="xs:string" minOccurs="0" />
+              <xs:element name="Response_x0020_time2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaskHistory_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaskEnd_x0020_Time" type="xs:string" minOccurs="0" />
+              <xs:element name="TranID_x0020__x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="TaskNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="TermID_x0020__x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="CPUTime" type="xs:string" minOccurs="0" />
+              <xs:element name="RespTime" type="xs:string" minOccurs="0" />
+              <xs:element name="StorageHWM" type="xs:string" minOccurs="0" />
+              <xs:element name="File_x0020_I_x002F_O" type="xs:string" minOccurs="0" />
+              <xs:element name="AbendCode_x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="OPT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPIQ_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="發票日期" type="xs:string" minOccurs="0" />
+              <xs:element name="發票號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="稅額合計" type="xs:string" minOccurs="0" />
+              <xs:element name="稅額年費" type="xs:string" minOccurs="0" />
+              <xs:element name="稅額利息" type="xs:string" minOccurs="0" />
+              <xs:element name="稅額服務費" type="xs:string" minOccurs="0" />
+              <xs:element name="調整合計" type="xs:string" minOccurs="0" />
+              <xs:element name="調整年費" type="xs:string" minOccurs="0" />
+              <xs:element name="調整利息" type="xs:string" minOccurs="0" />
+              <xs:element name="調整服務費" type="xs:string" minOccurs="0" />
+              <xs:element name="銷售額合計" type="xs:string" minOccurs="0" />
+              <xs:element name="應稅年費" type="xs:string" minOccurs="0" />
+              <xs:element name="應稅利息" type="xs:string" minOccurs="0" />
+              <xs:element name="應稅服務費" type="xs:string" minOccurs="0" />
+              <xs:element name="淨額" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPIQ_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="身份證字號" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPIM_4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEQ" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="APPLNO" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPEPP" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPENP" type="xs:string" minOccurs="0" />
+              <xs:element name="LSTACTDTE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPIM_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AP-ST" type="xs:string" minOccurs="0" />
+              <xs:element name="AUTH_x0020_SUP" type="xs:string" minOccurs="0" />
+              <xs:element name="BANKCARD" type="xs:string" minOccurs="0" />
+              <xs:element name="BIRTHDAY" type="xs:string" minOccurs="0" />
+              <xs:element name="CARD_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="COPY_x0020_TYPE0" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CRD_x0020_CLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC" type="xs:string" minOccurs="0" />
+              <xs:element name="DOC_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="EMB_x0020_DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="EMB_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="EMERGENCY" type="xs:string" minOccurs="0" />
+              <xs:element name="FEE_x0020_BENEFIT" type="xs:string" minOccurs="0" />
+              <xs:element name="GUARANTOR_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="GUARANTOR_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="HIND" type="xs:string" minOccurs="0" />
+              <xs:element name="JCIC_x0020_SEND" type="xs:string" minOccurs="0" />
+              <xs:element name="LST_x0020_ST_x0020_0_x0020_ADD" type="xs:string" minOccurs="0" />
+              <xs:element name="LST_x0020_ST_x0020_5_x0020_MNT" type="xs:string" minOccurs="0" />
+              <xs:element name="LT_x0020_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="LT_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_0" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_3" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_4" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_7" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_8" type="xs:string" minOccurs="0" />
+              <xs:element name="MT_x0020_9" type="xs:string" minOccurs="0" />
+              <xs:element name="NCCC_x0020_CLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="NCCC_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="NCCC_x0020_REJ" type="xs:string" minOccurs="0" />
+              <xs:element name="NON-SCORE" type="xs:string" minOccurs="0" />
+              <xs:element name="OCR" type="xs:string" minOccurs="0" />
+              <xs:element name="PASSW" type="xs:string" minOccurs="0" />
+              <xs:element name="PRE-SCREEN_x0020_OP_x0020_CDE" type="xs:string" minOccurs="0" />
+              <xs:element name="RC_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARK" type="xs:string" minOccurs="0" />
+              <xs:element name="RSN_x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="RTN_x0020_DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="SPC_x0020_LOAN" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_x0020_CDE" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_x0020_CH" type="xs:string" minOccurs="0" />
+              <xs:element name="TARGET" type="xs:string" minOccurs="0" />
+              <xs:element name="TV-CHK" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE2" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE3" type="xs:string" minOccurs="0" />
+              <xs:element name="VALIDITY" type="xs:string" minOccurs="0" />
+              <xs:element name="ND" type="xs:string" minOccurs="0" />
+              <xs:element name="VALIDITY_x0028_後_x0029_" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPIM_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CRD_x0020_FACE" type="xs:string" minOccurs="0" />
+              <xs:element name="A-TP" type="xs:string" minOccurs="0" />
+              <xs:element name="OFFICE_x0020_PHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="EXT" type="xs:string" minOccurs="0" />
+              <xs:element name="RANK" type="xs:string" minOccurs="0" />
+              <xs:element name="SAL" type="xs:string" minOccurs="0" />
+              <xs:element name="WRK_x0020_EXP" type="xs:string" minOccurs="0" />
+              <xs:element name="TIT" type="xs:string" minOccurs="0" />
+              <xs:element name="REG" type="xs:string" minOccurs="0" />
+              <xs:element name="LEV" type="xs:string" minOccurs="0" />
+              <xs:element name="SPO_x0020_CH_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="SPO_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CRD_x0020_SE" type="xs:string" minOccurs="0" />
+              <xs:element name="OCC" type="xs:string" minOccurs="0" />
+              <xs:element name="DM" type="xs:string" minOccurs="0" />
+              <xs:element name="SKY_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="CAR_x0020_PLT" type="xs:string" minOccurs="0" />
+              <xs:element name="EMBR2" type="xs:string" minOccurs="0" />
+              <xs:element name="MGM_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="SC" type="xs:string" minOccurs="0" />
+              <xs:element name="PC" type="xs:string" minOccurs="0" />
+              <xs:element name="TKO" type="xs:string" minOccurs="0" />
+              <xs:element name="BIZ_x0020_CDE" type="xs:string" minOccurs="0" />
+              <xs:element name="JOB_x0020_CDE" type="xs:string" minOccurs="0" />
+              <xs:element name="DD_x0020__x0025_" type="xs:string" minOccurs="0" />
+              <xs:element name="THIRMK" type="xs:string" minOccurs="0" />
+              <xs:element name="GIFTFLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="PASSW" type="xs:string" minOccurs="0" />
+              <xs:element name="DE_x0020_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="LT_x0020_DT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPIM_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0031_ST_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_ND_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_RD_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="APP_x0020_ST" type="xs:string" minOccurs="0" />
+              <xs:element name="APPL_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="A-TP" type="xs:string" minOccurs="0" />
+              <xs:element name="BB_x0020_CALL_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="BIRTH" type="xs:string" minOccurs="0" />
+              <xs:element name="CH_x0020_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="CO_x0020_ADDR1" type="xs:string" minOccurs="0" />
+              <xs:element name="CO_x0020_ADDR2" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTK_x0020_0" type="xs:string" minOccurs="0" />
+              <xs:element name="CONTK_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="CRD_x0020_FACE" type="xs:string" minOccurs="0" />
+              <xs:element name="CRD_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CRD_x0020_TYP" type="xs:string" minOccurs="0" />
+              <xs:element name="DE_x0020_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="EDU" type="xs:string" minOccurs="0" />
+              <xs:element name="EMAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EMB_x0020_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_ADDR1" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_ADDR2" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="H-TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="LIVI_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="LIVI_x0020_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="LT_x0020_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="LT_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="M_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="MARRI" type="xs:string" minOccurs="0" />
+              <xs:element name="MOBILE" type="xs:string" minOccurs="0" />
+              <xs:element name="NAT" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHR_x0020_ADD0" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHR_x0020_ADD1" type="xs:string" minOccurs="0" />
+              <xs:element name="P_x0020_CRD" type="xs:string" minOccurs="0" />
+              <xs:element name="P_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PASSW" type="xs:string" minOccurs="0" />
+              <xs:element name="PHONE_CONTK_x0020_0" type="xs:string" minOccurs="0" />
+              <xs:element name="PHONE_CONTK_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="PP_x0020_EX" type="xs:string" minOccurs="0" />
+              <xs:element name="PRI_x0020_R" type="xs:string" minOccurs="0" />
+              <xs:element name="PRI_x002F_SUP" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_x0020_0" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="SEX" type="xs:string" minOccurs="0" />
+              <xs:element name="YR" type="xs:string" minOccurs="0" />
+              <xs:element name="H-TEL_x0020_EXT" type="xs:string" minOccurs="0" />
+              <xs:element name="M" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPDH_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="交易金額" type="xs:string" minOccurs="0" />
+              <xs:element name="BIN_x002F_ICA" type="xs:string" minOccurs="0" />
+              <xs:element name="國碼" type="xs:string" minOccurs="0" />
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="行業別" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="REQUEST_x0020_TYPE_x0020_CVV" type="xs:string" minOccurs="0" />
+              <xs:element name="RESPONSE" type="xs:string" minOccurs="0" />
+              <xs:element name="ROWID" type="xs:string" minOccurs="0" />
+              <xs:element name="SELECT" type="xs:string" minOccurs="0" />
+              <xs:element name="交易時間" type="xs:string" minOccurs="0" />
+              <xs:element name="REV_x0020_CODE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPDH_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPBH_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="兌換點數" type="xs:string" minOccurs="0" />
+              <xs:element name="明細說明" type="xs:string" minOccurs="0" />
+              <xs:element name="執行人員" type="xs:string" minOccurs="0" />
+              <xs:element name="序號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPBH_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PREVIOUS" type="xs:string" minOccurs="0" />
+              <xs:element name="SUSPENSE" type="xs:string" minOccurs="0" />
+              <xs:element name="THIS" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT-AVAIL-BONUS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPBA_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="調整理由碼" type="xs:string" minOccurs="0" />
+              <xs:element name="調整去年點數" type="xs:string" minOccurs="0" />
+              <xs:element name="調整前年點數" type="xs:string" minOccurs="0" />
+              <xs:element name="總累積可用紅利" type="xs:string" minOccurs="0" />
+              <xs:element name="調整今年點數" type="xs:string" minOccurs="0" />
+              <xs:element name="調整方式" type="xs:string" minOccurs="0" />
+              <xs:element name="CONFIRM" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="去年累積紅利" type="xs:string" minOccurs="0" />
+              <xs:element name="備註欄" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="前年累積紅利" type="xs:string" minOccurs="0" />
+              <xs:element name="大前年累積紅利" type="xs:string" minOccurs="0" />
+              <xs:element name="今年累積紅利" type="xs:string" minOccurs="0" />
+              <xs:element name="調整大前年點數" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPAC_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CARD_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DOB" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CARD_x0020_ACT_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CARD_x0020_CNT" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CARD_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CARD_x0020_EXPIRY" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CARD_x0020_OPER" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CARD_x0020_TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_x0020_CARD_x0020_ACT_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_x0020_CARD_x0020_CNT" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_x0020_CARD_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_x0020_CARD_x0020_EXPIRY" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_x0020_CARD_x0020_OPER" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_x0020_CARD_x0020_TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="SET_x0020_NEW_x0020_CARD" type="xs:string" minOccurs="0" />
+              <xs:element name="SET_x0020_OLD_x0020_CARD" type="xs:string" minOccurs="0" />
+              <xs:element name="WRONG_x0020_EXPIRY_x0020_ACT_x0020_CNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1H_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONFIRM" type="xs:string" minOccurs="0" />
+              <xs:element name="DESC" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="PGM" type="xs:string" minOccurs="0" />
+              <xs:element name="PROD" type="xs:string" minOccurs="0" />
+              <xs:element name="QTY" type="xs:string" minOccurs="0" />
+              <xs:element name="ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="地址1" type="xs:string" minOccurs="0" />
+              <xs:element name="地址2" type="xs:string" minOccurs="0" />
+              <xs:element name="兌換點數" type="xs:string" minOccurs="0" />
+              <xs:element name="序號" type="xs:string" minOccurs="0" />
+              <xs:element name="身份證號" type="xs:string" minOccurs="0" />
+              <xs:element name="來源" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+              <xs:element name="電話" type="xs:string" minOccurs="0" />
+              <xs:element name="維護人員" type="xs:string" minOccurs="0" />
+              <xs:element name="維護日期" type="xs:string" minOccurs="0" />
+              <xs:element name="需自付或回饋金額" type="xs:string" minOccurs="0" />
+              <xs:element name="訊息" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1G2_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="申請編號" type="xs:string" minOccurs="0" />
+              <xs:element name="保單號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="推薦者_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="註記" type="xs:string" minOccurs="0" />
+              <xs:element name="維護人員" type="xs:string" minOccurs="0" />
+              <xs:element name="維護日期" type="xs:string" minOccurs="0" />
+              <xs:element name="類別" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1G2_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1F7_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="申請編號" type="xs:string" minOccurs="0" />
+              <xs:element name="保單號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="推薦者_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="期數" type="xs:string" minOccurs="0" />
+              <xs:element name="註銷" type="xs:string" minOccurs="0" />
+              <xs:element name="維護人員" type="xs:string" minOccurs="0" />
+              <xs:element name="維護日期" type="xs:string" minOccurs="0" />
+              <xs:element name="類別" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1F7_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1F5_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="加保日期" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+              <xs:element name="狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="保單號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="退保理賠日期" type="xs:string" minOccurs="0" />
+              <xs:element name="掛帳失敗日期" type="xs:string" minOccurs="0" />
+              <xs:element name="掛帳失敗原因" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1F2_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="申請編號" type="xs:string" minOccurs="0" />
+              <xs:element name="保單號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="期數" type="xs:string" minOccurs="0" />
+              <xs:element name="類別" type="xs:string" minOccurs="0" />
+              <xs:element name="推薦者_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="維護人員" type="xs:string" minOccurs="0" />
+              <xs:element name="維護日期" type="xs:string" minOccurs="0" />
+              <xs:element name="註銷" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1F2_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1E3_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OPT" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDNO" type="xs:string" minOccurs="0" />
+              <xs:element name="TX-DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="TX-TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="AMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="AUTH" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0025_" type="xs:string" minOccurs="0" />
+              <xs:element name="UUID" type="xs:string" minOccurs="0" />
+              <xs:element name="PRC-DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRC-TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="MTCH" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1E3_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRST_x0020_TIMES" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1E2_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0025_" type="xs:string" minOccurs="0" />
+              <xs:element name="AMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="AUTH" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDNO" type="xs:string" minOccurs="0" />
+              <xs:element name="MTCH" type="xs:string" minOccurs="0" />
+              <xs:element name="PRC-DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRC-TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="TX-DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="TX-TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="UUID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1E2_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRST_x0020_TIMES" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1E1_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OPT" type="xs:string" minOccurs="0" />
+              <xs:element name="刷卡金額" type="xs:string" minOccurs="0" />
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="交易時間" type="xs:string" minOccurs="0" />
+              <xs:element name="交易金額" type="xs:string" minOccurs="0" />
+              <xs:element name="授權碼" type="xs:string" minOccurs="0" />
+              <xs:element name="MCC" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1E1_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRST_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1D2_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="即時列印" type="xs:string" minOccurs="0" />
+              <xs:element name="寄送方式" type="xs:string" minOccurs="0" />
+              <xs:element name="強制列印" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1D1_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="即時列印" type="xs:string" minOccurs="0" />
+              <xs:element name="寄送方式" type="xs:string" minOccurs="0" />
+              <xs:element name="強制列印" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1C2_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="即時列印" type="xs:string" minOccurs="0" />
+              <xs:element name="寄送方式" type="xs:string" minOccurs="0" />
+              <xs:element name="強制列印" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1C1_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="即時列印" type="xs:string" minOccurs="0" />
+              <xs:element name="寄送方式" type="xs:string" minOccurs="0" />
+              <xs:element name="強制列印" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1A4_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="用戶編號" type="xs:string" minOccurs="0" />
+              <xs:element name="申請類別" type="xs:string" minOccurs="0" />
+              <xs:element name="狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="註銷日期" type="xs:string" minOccurs="0" />
+              <xs:element name="維護人員" type="xs:string" minOccurs="0" />
+              <xs:element name="維護日期" type="xs:string" minOccurs="0" />
+              <xs:element name="上次請款日" type="xs:string" minOccurs="0" />
+              <xs:element name="上次請款狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="本次請款日" type="xs:string" minOccurs="0" />
+              <xs:element name="本次請款狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="機構代號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1A4_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1A3_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="用戶編號" type="xs:string" minOccurs="0" />
+              <xs:element name="申請類別" type="xs:string" minOccurs="0" />
+              <xs:element name="狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="註銷日期" type="xs:string" minOccurs="0" />
+              <xs:element name="維護人員" type="xs:string" minOccurs="0" />
+              <xs:element name="維護日期" type="xs:string" minOccurs="0" />
+              <xs:element name="上次請款日" type="xs:string" minOccurs="0" />
+              <xs:element name="上次請款狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="本次請款日" type="xs:string" minOccurs="0" />
+              <xs:element name="本次請款狀態" type="xs:string" minOccurs="0" />
+              <xs:element name="機構代號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-1A3_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="身分證號" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-161_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="可用額度" type="xs:string" minOccurs="0" />
+              <xs:element name="失效日期" type="xs:string" minOccurs="0" />
+              <xs:element name="目前餘額" type="xs:string" minOccurs="0" />
+              <xs:element name="自扣金額" type="xs:string" minOccurs="0" />
+              <xs:element name="自扣帳號" type="xs:string" minOccurs="0" />
+              <xs:element name="固定額度" type="xs:string" minOccurs="0" />
+              <xs:element name="信用額度" type="xs:string" minOccurs="0" />
+              <xs:element name="帳單餘額" type="xs:string" minOccurs="0" />
+              <xs:element name="授權金額" type="xs:string" minOccurs="0" />
+              <xs:element name="授權數" type="xs:string" minOccurs="0" />
+              <xs:element name="最近繳款日" type="xs:string" minOccurs="0" />
+              <xs:element name="最近繳款金額" type="xs:string" minOccurs="0" />
+              <xs:element name="預借現金可用餘額" type="xs:string" minOccurs="0" />
+              <xs:element name="總計最低應繳" type="xs:string" minOccurs="0" />
+              <xs:element name="臨調生效日" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款截止日期" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-161_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CAR" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="卡人_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="卡人類別" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="到期日" type="xs:string" minOccurs="0" />
+              <xs:element name="狀況日期" type="xs:string" minOccurs="0" />
+              <xs:element name="狀況碼" type="xs:string" minOccurs="0" />
+              <xs:element name="狀態碼" type="xs:string" minOccurs="0" />
+              <xs:element name="保人_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="前況日期" type="xs:string" minOccurs="0" />
+              <xs:element name="發卡日" type="xs:string" minOccurs="0" />
+              <xs:element name="開卡日期" type="xs:string" minOccurs="0" />
+              <xs:element name="催收日期" type="xs:string" minOccurs="0" />
+              <xs:element name="優惠碼" type="xs:string" minOccurs="0" />
+              <xs:element name="歸戶_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="關戶日" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-161_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REF-1" type="xs:string" minOccurs="0" />
+              <xs:element name="REF-2" type="xs:string" minOccurs="0" />
+              <xs:element name="公司名稱" type="xs:string" minOccurs="0" />
+              <xs:element name="公司電話" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="生日" type="xs:string" minOccurs="0" />
+              <xs:element name="住宅電話" type="xs:string" minOccurs="0" />
+              <xs:element name="身份証號" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+              <xs:element name="客戶等級" type="xs:string" minOccurs="0" />
+              <xs:element name="建檔日" type="xs:string" minOccurs="0" />
+              <xs:element name="結帳週期" type="xs:string" minOccurs="0" />
+              <xs:element name="職稱" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款評等" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-152_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="即時列印" type="xs:string" minOccurs="0" />
+              <xs:element name="寄送方式" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-151_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="即時列印" type="xs:string" minOccurs="0" />
+              <xs:element name="寄送方式" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-132_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="功能碼" type="xs:string" minOccurs="0" />
+              <xs:element name="刪除確認" type="xs:string" minOccurs="0" />
+              <xs:element name="身份證號" type="xs:string" minOccurs="0" />
+              <xs:element name="建檔日期" type="xs:string" minOccurs="0" />
+              <xs:element name="建檔時間" type="xs:string" minOccurs="0" />
+              <xs:element name="帳單年月" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-131_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="地址1" type="xs:string" minOccurs="0" />
+              <xs:element name="地址2" type="xs:string" minOccurs="0" />
+              <xs:element name="身份證號" type="xs:string" minOccurs="0" />
+              <xs:element name="建檔日期" type="xs:string" minOccurs="0" />
+              <xs:element name="建檔時間" type="xs:string" minOccurs="0" />
+              <xs:element name="帳單年月" type="xs:string" minOccurs="0" />
+              <xs:element name="帳單指示" type="xs:string" minOccurs="0" />
+              <xs:element name="郵寄方式" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-114_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_xFF21__xFF2D__xFF25__xFF38_" type="xs:string" minOccurs="0" />
+              <xs:element name="_xFF2D__xFF21__xFF33__xFF34_" type="xs:string" minOccurs="0" />
+              <xs:element name="NCCC_x002B_JCB" type="xs:string" minOccurs="0" />
+              <xs:element name="_xFF36__xFF29__xFF33__xFF21_" type="xs:string" minOccurs="0" />
+              <xs:element name="月份" type="xs:string" minOccurs="0" />
+              <xs:element name="合計" type="xs:string" minOccurs="0" />
+              <xs:element name="次數" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-114_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="身份證號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-113_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="入帳日" type="xs:string" minOccurs="0" />
+              <xs:element name="中央處理日" type="xs:string" minOccurs="0" />
+              <xs:element name="外幣折算日" type="xs:string" minOccurs="0" />
+              <xs:element name="目的地金額" type="xs:string" minOccurs="0" />
+              <xs:element name="交易識別碼" type="xs:string" minOccurs="0" />
+              <xs:element name="存放位置" type="xs:string" minOccurs="0" />
+              <xs:element name="行業" type="xs:string" minOccurs="0" />
+              <xs:element name="批次號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="美金金額" type="xs:string" minOccurs="0" />
+              <xs:element name="格式代碼" type="xs:string" minOccurs="0" />
+              <xs:element name="消費日" type="xs:string" minOccurs="0" />
+              <xs:element name="消費卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="消費地金額" type="xs:string" minOccurs="0" />
+              <xs:element name="區域銀行" type="xs:string" minOccurs="0" />
+              <xs:element name="商店代號" type="xs:string" minOccurs="0" />
+              <xs:element name="商店名稱" type="xs:string" minOccurs="0" />
+              <xs:element name="帳單交易碼" type="xs:string" minOccurs="0" />
+              <xs:element name="清算日期" type="xs:string" minOccurs="0" />
+              <xs:element name="超額授權碼" type="xs:string" minOccurs="0" />
+              <xs:element name="檢查號碼" type="xs:string" minOccurs="0" />
+              <xs:element name="查詢年月" type="xs:string" minOccurs="0" />
+              <xs:element name="歸戶帳號" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="起息日期" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-112_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="入帳日" type="xs:string" minOccurs="0" />
+              <xs:element name="卡類" type="xs:string" minOccurs="0" />
+              <xs:element name="台幣金額" type="xs:string" minOccurs="0" />
+              <xs:element name="消費日" type="xs:string" minOccurs="0" />
+              <xs:element name="摘要" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-112_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="CTD" type="xs:string" minOccurs="0" />
+              <xs:element name="CUR" type="xs:string" minOccurs="0" />
+              <xs:element name="L" type="xs:string" minOccurs="0" />
+              <xs:element name="P" type="xs:string" minOccurs="0" />
+              <xs:element name="T" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT_x0020_INT" type="xs:string" minOccurs="0" />
+              <xs:element name="USE" type="xs:string" minOccurs="0" />
+              <xs:element name="上期餘額" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="本期帳款" type="xs:string" minOccurs="0" />
+              <xs:element name="本期應繳款" type="xs:string" minOccurs="0" />
+              <xs:element name="其他款項" type="xs:string" minOccurs="0" />
+              <xs:element name="查詢月年" type="xs:string" minOccurs="0" />
+              <xs:element name="帳單日期" type="xs:string" minOccurs="0" />
+              <xs:element name="最低應繳款" type="xs:string" minOccurs="0" />
+              <xs:element name="循環利息" type="xs:string" minOccurs="0" />
+              <xs:element name="新增超額" type="xs:string" minOccurs="0" />
+              <xs:element name="當期本金" type="xs:string" minOccurs="0" />
+              <xs:element name="違約金" type="xs:string" minOccurs="0" />
+              <xs:element name="歸戶帳號" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款金額" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款截止日" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-111_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="入帳日" type="xs:string" minOccurs="0" />
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="交易日" type="xs:string" minOccurs="0" />
+              <xs:element name="交易碼" type="xs:string" minOccurs="0" />
+              <xs:element name="金額" type="xs:string" minOccurs="0" />
+              <xs:element name="消費摘要" type="xs:string" minOccurs="0" />
+              <xs:element name="微縮影號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SLMS-111_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="卡號" type="xs:string" minOccurs="0" />
+              <xs:element name="身份証號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SIGNON_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SESSION" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCTD_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="入帳日" type="xs:string" minOccurs="0" />
+              <xs:element name="消費摘要" type="xs:string" minOccurs="0" />
+              <xs:element name="TRANCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="消費日" type="xs:string" minOccurs="0" />
+              <xs:element name="商店代碼" type="xs:string" minOccurs="0" />
+              <xs:element name="消費金額" type="xs:string" minOccurs="0" />
+              <xs:element name="交易碼" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCTD_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT_x0020_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCSD_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="入帳日" type="xs:string" minOccurs="0" />
+              <xs:element name="消費摘要" type="xs:string" minOccurs="0" />
+              <xs:element name="商店代碼" type="xs:string" minOccurs="0" />
+              <xs:element name="消費日" type="xs:string" minOccurs="0" />
+              <xs:element name="消費金額" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCSD_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="上期餘額" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款金額" type="xs:string" minOccurs="0" />
+              <xs:element name="本期繳款" type="xs:string" minOccurs="0" />
+              <xs:element name="預借現金" type="xs:string" minOccurs="0" />
+              <xs:element name="利息" type="xs:string" minOccurs="0" />
+              <xs:element name="本期應繳" type="xs:string" minOccurs="0" />
+              <xs:element name="當期本金" type="xs:string" minOccurs="0" />
+              <xs:element name="新增超額" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT_x0020_INT" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="STDT" type="xs:string" minOccurs="0" />
+              <xs:element name="額度" type="xs:string" minOccurs="0" />
+              <xs:element name="可用額度" type="xs:string" minOccurs="0" />
+              <xs:element name="已計息天數" type="xs:string" minOccurs="0" />
+              <xs:element name="繳款截止日" type="xs:string" minOccurs="0" />
+              <xs:element name="本期最低" type="xs:string" minOccurs="0" />
+              <xs:element name="前期最低" type="xs:string" minOccurs="0" />
+              <xs:element name="本期最低應繳金額" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCNL_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CD" type="xs:string" minOccurs="0" />
+              <xs:element name="身分證字號" type="xs:string" minOccurs="0" />
+              <xs:element name="姓名" type="xs:string" minOccurs="0" />
+              <xs:element name="電話" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="SELCT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCNL_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="FIRST_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="INITIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="KEY_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NEXT_x0020_TRANS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMH_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0032_ND" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_ND_x0020__x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_ND_x0020__x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_ND_x0020__x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_RD" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_RD_x0020__x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_RD_x0020__x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="ANNUAL_x0020_FEES" type="xs:string" minOccurs="0" />
+              <xs:element name="BASE" type="xs:string" minOccurs="0" />
+              <xs:element name="BASE_x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="BASE_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_BASE_x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_INTEREST" type="xs:string" minOccurs="0" />
+              <xs:element name="CHG_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="CURR_x0020_YEAR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_STAT_x0020_CHNGE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_TRANSFER_x0020_EFFECTIVE" type="xs:string" minOccurs="0" />
+              <xs:element name="JOINING_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_YR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="LATE_x0020_CHARGES" type="xs:string" minOccurs="0" />
+              <xs:element name="LATE_x0020_NOTICES" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_ACCT_x0020__x0023_" type="xs:string" minOccurs="0" />
+              <xs:element name="OVERLIMIT_x0020_CHARGES" type="xs:string" minOccurs="0" />
+              <xs:element name="PENDING_x0020__x0020_OCCURRENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="PENDING_x0020_EXPIRATION_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_x0020_OFFERING_x0020_TABLE_x0020__x0020_OCCURRENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCT_x0020_OFFERING_x0020_TABLE_x0020_EXPIRATION_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="RETAIL_x0020_INTEREST" type="xs:string" minOccurs="0" />
+              <xs:element name="RSN_x0020_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_2ND" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_2ND_x0020__x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_2ND_x0020__x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_2ND_x0020__x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_3RD" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_3RD_x0020__x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_3RD_x0020__x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE_x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE_x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_CHG_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_CURR_x0020_YEAR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_LAST_x0020_YR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS_x0020_FL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMH_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0030_1-06" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0030_7-12" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_3-18" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_9-24" type="xs:string" minOccurs="0" />
+              <xs:element name="AFF_x0020_GRP" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CTD_x0020_ADJU" type="xs:string" minOccurs="0" />
+              <xs:element name="CURR_x0020_COLLECTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_INTO_x0020_COL" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_ISSUE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LST_x0020_RTN" type="xs:string" minOccurs="0" />
+              <xs:element name="DDA_x0020_ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="DTE_x0020_PIN_x0020_MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="INSU_x0020_REV" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_EXPIRE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="LST_x0020_REAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="NBR_x0020_RTN_x0020_CHECK" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="PERM_x0020_COLLECTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="PGM" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="REAGE_x0020_REQUEST" type="xs:string" minOccurs="0" />
+              <xs:element name="REASON_x0020_IN_x0020_COLL" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="SRC" type="xs:string" minOccurs="0" />
+              <xs:element name="TELEPIN" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMH_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="ACH_x0020_BANK" type="xs:string" minOccurs="0" />
+              <xs:element name="ALT" type="xs:string" minOccurs="0" />
+              <xs:element name="ALT_x0020_BLCK" type="xs:string" minOccurs="0" />
+              <xs:element name="ALT_x0020_CUST_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="APP_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLING_x0020_CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="BLK_x0020_EXP_x0020_DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCK" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCK_x0020_CDE" type="xs:string" minOccurs="0" />
+              <xs:element name="BONUS_x0020_BUCKS" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_x0020_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="BUCKS_x0020_USED" type="xs:string" minOccurs="0" />
+              <xs:element name="CARD_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CLOSED" type="xs:string" minOccurs="0" />
+              <xs:element name="CLS" type="xs:string" minOccurs="0" />
+              <xs:element name="COLL_x0020_CARD_x0020_REQUEST" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLATERAL" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_REG" type="xs:string" minOccurs="0" />
+              <xs:element name="CORP_x0020_CUST" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CSH_x0020_LIM" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_x0020_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_NEXT_x0020_STMT" type="xs:string" minOccurs="0" />
+              <xs:element name="DISPLAY_x0020_REQUEST" type="xs:string" minOccurs="0" />
+              <xs:element name="DLY_x0020_CSH_x0020_LIM" type="xs:string" minOccurs="0" />
+              <xs:element name="DTE_x0020_ALT_x0020_CUS_x0020_EXP" type="xs:string" minOccurs="0" />
+              <xs:element name="DUP_x0020_STMT" type="xs:string" minOccurs="0" />
+              <xs:element name="EMB_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="EPSS_x0020_PIN_x0020_RETRIES" type="xs:string" minOccurs="0" />
+              <xs:element name="EXP" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRES" type="xs:string" minOccurs="0" />
+              <xs:element name="FIXED_x0020_PYMT" type="xs:string" minOccurs="0" />
+              <xs:element name="HI_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="MULTIPLE" type="xs:string" minOccurs="0" />
+              <xs:element name="NEG" type="xs:string" minOccurs="0" />
+              <xs:element name="OFFICER_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="OPENED" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNERSHIP_x0020_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYMENT_x0020_METH" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYMENT_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="POSTING" type="xs:string" minOccurs="0" />
+              <xs:element name="PRE_x0020_PAY" type="xs:string" minOccurs="0" />
+              <xs:element name="REL" type="xs:string" minOccurs="0" />
+              <xs:element name="RENEW" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STATEMENT_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="STMT_x0020_FREQ" type="xs:string" minOccurs="0" />
+              <xs:element name="TBL_x0020_HBL" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_CODE_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_CODE_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_CODE_x0020_3" type="xs:string" minOccurs="0" />
+              <xs:element name="WARN_x0020_BULLTN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMC_5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADDR_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_3" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR1" type="xs:string" minOccurs="0" />
+              <xs:element name="BIRTH_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CARD" type="xs:string" minOccurs="0" />
+              <xs:element name="CITY" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYER" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_TEL" type="xs:string" minOccurs="0" />
+              <xs:element name="HPHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="IC_x002F_PP" type="xs:string" minOccurs="0" />
+              <xs:element name="INCOME" type="xs:string" minOccurs="0" />
+              <xs:element name="MOTHER_x0020_MAIDEN_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="POSTAL" type="xs:string" minOccurs="0" />
+              <xs:element name="REL" type="xs:string" minOccurs="0" />
+              <xs:element name="ST" type="xs:string" minOccurs="0" />
+              <xs:element name="WORK_x0020_TEL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMC_4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IC_x002F_PP" type="xs:string" minOccurs="0" />
+              <xs:element name="INCOME" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_IC_x002F_PP" type="xs:string" minOccurs="0" />
+              <xs:element name="MOTHER_x0020_MAIDEN_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UC1" type="xs:string" minOccurs="0" />
+              <xs:element name="UC2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMC_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CARD_x0020_MAILER" type="xs:string" minOccurs="0" />
+              <xs:element name="CO_x0020_MARKET" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLECTION" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="DIRECT_x0020_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="IBT_x0020_CASH" type="xs:string" minOccurs="0" />
+              <xs:element name="IVR_x0020_ERR" type="xs:string" minOccurs="0" />
+              <xs:element name="MAIL_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER1" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER2" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN_x0020_MAILER" type="xs:string" minOccurs="0" />
+              <xs:element name="STATEMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="THIR_x0020_MK" type="xs:string" minOccurs="0" />
+              <xs:element name="T-PIN" type="xs:string" minOccurs="0" />
+              <xs:element name="USAGE_x0020_12" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMC_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0031_2M_x0020__x0020_BEH" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_4M_x0020_BEH" type="xs:string" minOccurs="0" />
+              <xs:element name="ACORN_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="BEHAVIOURAL_x0020_SCORE" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_ADV_x0020_FG" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_x0020_BLOCK_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_x0020_CLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="EDU" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYER_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="GUARANTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="HIND-3" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="INITIALS" type="xs:string" minOccurs="0" />
+              <xs:element name="JOINT_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="LEZ_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="MARITAL_x0020_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_CREDIT_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_x0020_OF_x0020_DEPENDANTS" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPATION_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPATION_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="PERIOD_x0020_OF_x0020_OCCUPN" type="xs:string" minOccurs="0" />
+              <xs:element name="PERIOD_x0020_OF_x0020_RESIDENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="RISK_x0020_GRADE" type="xs:string" minOccurs="0" />
+              <xs:element name="SEX" type="xs:string" minOccurs="0" />
+              <xs:element name="TEMP_x0020_CREDIT_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="TITLE" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE_x0020_OF_x0020_RESIDENCE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCMC_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AC" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="BANK_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="B-B_x0020_CALL" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLING_x0020_CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="BIRTH_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CAR_x0020_PLATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CELL_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="CIF" type="xs:string" minOccurs="0" />
+              <xs:element name="CO-OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="DIRECT_x0020_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="E-MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYMENT_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYMENT_x0020_PHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="F_x0020_EXPIRY" type="xs:string" minOccurs="0" />
+              <xs:element name="HI" type="xs:string" minOccurs="0" />
+              <xs:element name="INC" type="xs:string" minOccurs="0" />
+              <xs:element name="IND" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="NATIONALITY" type="xs:string" minOccurs="0" />
+              <xs:element name="ND" type="xs:string" minOccurs="0" />
+              <xs:element name="OPEN" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="R1_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="R1_x0020_REL" type="xs:string" minOccurs="0" />
+              <xs:element name="R2_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="R2_x0020_REL" type="xs:string" minOccurs="0" />
+              <xs:element name="REF1" type="xs:string" minOccurs="0" />
+              <xs:element name="REF2" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARK" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_x002F_CTY" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="STMT_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="TELEPHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="WAIVE_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="ZIP" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIR_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_x0020_AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_x0020_EFFECTIVE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_x0020_EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="EFFECTIVE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_ND_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="PERM_x0020_LAST_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="PERMANENT_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="PERMANENT_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="REASON_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="REGION_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TEMPORARY_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="TEMPORARY_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="PCIR_x0020_查詢區" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIK_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="APP_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="BK" type="xs:string" minOccurs="0" />
+              <xs:element name="CC" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDITLIMIT_x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="CREX" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENTBALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="LK" type="xs:string" minOccurs="0" />
+              <xs:element name="OPT" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="REL" type="xs:string" minOccurs="0" />
+              <xs:element name="RowId" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIK_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="NEXT_x0020_TRANS" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIH_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ANNUAL_x0020_FEES" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_BASE" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_BASE_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_BASE_x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_CHG_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_CURR_x0020_YEAR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_INTEREST" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_LAST_x0020_YR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_STAT_x0020_CHNGE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_TRANSFER_x0020_EFFECTIVE" type="xs:string" minOccurs="0" />
+              <xs:element name="JOINING_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="LATE_x0020_CHARGES" type="xs:string" minOccurs="0" />
+              <xs:element name="LATE_x0020_NOTICES" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_x0020_ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OVERLIMIT_x0020_CHARGES" type="xs:string" minOccurs="0" />
+              <xs:element name="PENDING_x0020__x0020_OCCURRENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="PENDING_x0020_EXPIRATION_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="PREPAY" type="xs:string" minOccurs="0" />
+              <xs:element name="RETAIL_x0020_INTEREST" type="xs:string" minOccurs="0" />
+              <xs:element name="RSN_x0020_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020__x0020_ADJ" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_BASE_x0020_RATE" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_CHG_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_CURR_x0020_YEAR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="RTL_x0020_LAST_x0020_YR_x0020_INTR_x0020_PAID" type="xs:string" minOccurs="0" />
+              <xs:element name="SERVICE_x0020_CHARGES" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS_x0020_FL" type="xs:string" minOccurs="0" />
+              <xs:element name="TABLE_x0020__x0020_OCCURRENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="TABLE_x0020_EXPIRATION_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIH_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0030_1-06" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0030_7-12" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_3-18" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_9-24" type="xs:string" minOccurs="0" />
+              <xs:element name="AFF_x0020_GRP" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CTD_x0020_ADJU" type="xs:string" minOccurs="0" />
+              <xs:element name="CURR_x0020_COLLECTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_INTO_x0020_COL" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_ISSUE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LST_x0020_RTN" type="xs:string" minOccurs="0" />
+              <xs:element name="DDA_x0020_ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="DTE_x0020_PIN_x0020_MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="E1_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="E2_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="INSU_x0020_REV" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_EXPIRE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="LST_x0020_REAGE" type="xs:string" minOccurs="0" />
+              <xs:element name="NBR_x0020_RTN_x0020_CHECK" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="PERM_x0020_COLLECTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="PGM" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="REAGE_x0020_REQUEST" type="xs:string" minOccurs="0" />
+              <xs:element name="REASON_x0020_IN_x0020_COLL" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="RM_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020__x0023_OUT" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020__x0023_REQ" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020__x0023_RET" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020_ACTN" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020_PA" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020_PLASTIC_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020_RQTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="RM1_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="SRC" type="xs:string" minOccurs="0" />
+              <xs:element name="TELEPIN" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_ACCT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIH_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCT" type="xs:string" minOccurs="0" />
+              <xs:element name="ACH_x0020_BANK" type="xs:string" minOccurs="0" />
+              <xs:element name="ALT" type="xs:string" minOccurs="0" />
+              <xs:element name="ALT_x0020_BLCK" type="xs:string" minOccurs="0" />
+              <xs:element name="ALT_x0020_CUST_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="APP_x0020_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLING_x0020_CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="BLK_x0020_EXP_x0020_DTE" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCK" type="xs:string" minOccurs="0" />
+              <xs:element name="BLOCK_x0020_CDE" type="xs:string" minOccurs="0" />
+              <xs:element name="BONUS_x0020_BUCKS" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH_x0020_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="BUCKS_x0020_USED" type="xs:string" minOccurs="0" />
+              <xs:element name="CARD_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CLOSED" type="xs:string" minOccurs="0" />
+              <xs:element name="CLS" type="xs:string" minOccurs="0" />
+              <xs:element name="COLL_x0020_CARD_x0020_REQUEST" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLATERAL" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_REG" type="xs:string" minOccurs="0" />
+              <xs:element name="CORP_x0020_CUST" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_x0020_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_NEXT_x0020_STMT" type="xs:string" minOccurs="0" />
+              <xs:element name="DISPLAY_x0020_REQUEST" type="xs:string" minOccurs="0" />
+              <xs:element name="DLY_x0020_CSH_x0020_LIM_x0020_" type="xs:string" minOccurs="0" />
+              <xs:element name="DTE_x0020_ALT_x0020_CUS_x0020_EXP" type="xs:string" minOccurs="0" />
+              <xs:element name="DUP_x0020_STMT" type="xs:string" minOccurs="0" />
+              <xs:element name="EMB_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="EPSS_x0020_PIN_x0020_RETRIES" type="xs:string" minOccurs="0" />
+              <xs:element name="EXP" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRES" type="xs:string" minOccurs="0" />
+              <xs:element name="FIXED_x0020_PYMT" type="xs:string" minOccurs="0" />
+              <xs:element name="HI_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="MEMO" type="xs:string" minOccurs="0" />
+              <xs:element name="MULTIPLE" type="xs:string" minOccurs="0" />
+              <xs:element name="NEG" type="xs:string" minOccurs="0" />
+              <xs:element name="OFFICER_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="OPENED" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNERSHIP_x0020_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="P_x0020_A_x002F_C" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYMENT_x0020_METH" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYMENT_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="POSTING" type="xs:string" minOccurs="0" />
+              <xs:element name="PRE_x0020_PAY" type="xs:string" minOccurs="0" />
+              <xs:element name="REL" type="xs:string" minOccurs="0" />
+              <xs:element name="RENEW" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="STATEMENT_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="STMT_x0020_FREQ" type="xs:string" minOccurs="0" />
+              <xs:element name="TBL_x0020_HBL" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_CODE_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_CODE_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="USER_x0020_CODE_x0020_3" type="xs:string" minOccurs="0" />
+              <xs:element name="WARN_x0020_BULLTN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIC_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CARD_x0020_MAILER" type="xs:string" minOccurs="0" />
+              <xs:element name="CO_x0020_MARKET" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLECTION" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="DIRECT_x0020_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="IBT_x0020_CASH" type="xs:string" minOccurs="0" />
+              <xs:element name="IVR_x0020_ERR" type="xs:string" minOccurs="0" />
+              <xs:element name="MAIL_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER1" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER2" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN_x0020_MAILER" type="xs:string" minOccurs="0" />
+              <xs:element name="STATEMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="T-PIN" type="xs:string" minOccurs="0" />
+              <xs:element name="USAGE_x0020_10" type="xs:string" minOccurs="0" />
+              <xs:element name="USAGE_x0020_12" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIC_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_4M_x0020_BEH" type="xs:string" minOccurs="0" />
+              <xs:element name="INITIALS" type="xs:string" minOccurs="0" />
+              <xs:element name="TITLE" type="xs:string" minOccurs="0" />
+              <xs:element name="SEX" type="xs:string" minOccurs="0" />
+              <xs:element name="MARITAL_x0020_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_x0020_OF_x0020_DEPENDANTS" type="xs:string" minOccurs="0" />
+              <xs:element name="HIND-3" type="xs:string" minOccurs="0" />
+              <xs:element name="BEHAVI_x0020_OURAL_x0020_SCORE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_x0020_CLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="GUARANTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="RISK_x0020_GRADE" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="JOINT_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE_x0020_OF_x0020_RESIDENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="PERIOD_x0020_OF_x0020_RESIDENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="LEZ_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACORN_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPATION_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PERIOD_x0020_OF_x0020_OCCUPN" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYER_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="EDU" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_ADV_x0020_FG" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPATION_x0020_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIC_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0032_ND_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="AC" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CSH" type="xs:string" minOccurs="0" />
+              <xs:element name="BANK_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="B-B_x0020_CALL" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLING_x0020_CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="BIRTH_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CAR_x0020_PLATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CELL_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="CO-OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="CO-OWNER_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CSH_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_MAINTENANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="DD_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DD_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="DIRECT_x0020_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="E-MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYMENT_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="F_x0020_EXPIRY" type="xs:string" minOccurs="0" />
+              <xs:element name="INC" type="xs:string" minOccurs="0" />
+              <xs:element name="LEVEL" type="xs:string" minOccurs="0" />
+              <xs:element name="MAINT_x002F_EFF_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NATIONALITY" type="xs:string" minOccurs="0" />
+              <xs:element name="OPEN" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="R1_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="R1_x0020_REL" type="xs:string" minOccurs="0" />
+              <xs:element name="R2_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="R2_x0020_REL" type="xs:string" minOccurs="0" />
+              <xs:element name="REF1" type="xs:string" minOccurs="0" />
+              <xs:element name="REF2" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARK" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_x002F_CTY" type="xs:string" minOccurs="0" />
+              <xs:element name="STAFF_x0020_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="STMT_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="TELEPHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="VIP_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="WAIVE_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="WORK_x0020__x0020__x0020_PHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="HI" type="xs:string" minOccurs="0" />
+              <xs:element name="ND" type="xs:string" minOccurs="0" />
+              <xs:element name="Service" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCHI_5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0030_1-06" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0030_7-12" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_3-18" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_9-24" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCHI_4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="次數" type="xs:string" minOccurs="0" />
+              <xs:element name="金額" type="xs:string" minOccurs="0" />
+              <xs:element name="逾期天數" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCHI_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x002A__x002A__x0020_AUTH_x0020__x002A__x002A__x0020_CSH" type="xs:string" minOccurs="0" />
+              <xs:element name="AMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="AMT_x0020_LAST_x0020_ADV" type="xs:string" minOccurs="0" />
+              <xs:element name="AMT_x0020_LAST_x0020_PURCH" type="xs:string" minOccurs="0" />
+              <xs:element name="AMT_x0020_LAST_x0020_PYMT" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_CHG_x0020_OFF" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_PYMT" type="xs:string" minOccurs="0" />
+              <xs:element name="CHKS_x0020_RTND" type="xs:string" minOccurs="0" />
+              <xs:element name="COL" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CURR_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="HI_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="NEG" type="xs:string" minOccurs="0" />
+              <xs:element name="RETAIL_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="RETAIL_x0020_CHG_x0020_OFF" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT_x0020_FEE" type="xs:string" minOccurs="0" />
+              <xs:element name="TOT_x0020_INT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCHI_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CARD_x0020_EXPIRES" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_ADV" type="xs:string" minOccurs="0" />
+              <xs:element name="CLOSED" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="HI_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="INTO_x0020_COLL" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_DELQ" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_RTN_x0020_CHK" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_STMT" type="xs:string" minOccurs="0" />
+              <xs:element name="OPENED" type="xs:string" minOccurs="0" />
+              <xs:element name="PAYMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="PRIOR_x0020_DELQ" type="xs:string" minOccurs="0" />
+              <xs:element name="PURCHASE" type="xs:string" minOccurs="0" />
+              <xs:element name="THIS_x0020_BAL" type="xs:string" minOccurs="0" />
+              <xs:element name="THIS_x0020_OVRL" type="xs:string" minOccurs="0" />
+              <xs:element name="TRANSFER" type="xs:string" minOccurs="0" />
+              <xs:element name="WARN_x0020_BULLETIN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCHI_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CARDHOLDER_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="P_x0020_A_x002F_C" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCCR_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0030_01" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CURRENT_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUS_x0020_AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="EFFECTIVE_x0020_DATE1" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE1" type="xs:string" minOccurs="0" />
+              <xs:element name="CUS_x0020_SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="EFFECTIVE_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="PERM_x0020_LAST_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="PERMANENT_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="PERMANENT_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="REASON_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="REGION_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TEMPORARY_x0020_CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="TEMPORARY_x0020_CR_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCAI_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="交易金額" type="xs:string" minOccurs="0" />
+              <xs:element name="授權碼" type="xs:string" minOccurs="0" />
+              <xs:element name="佔領天數" type="xs:string" minOccurs="0" />
+              <xs:element name="其他" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCAI_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="A_x002F_C" type="xs:string" minOccurs="0" />
+              <xs:element name="AUTHS_x0020_TODAY" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CASH" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_DLY_x0020_CASH" type="xs:string" minOccurs="0" />
+              <xs:element name="CARDHOLDER_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CPMT" type="xs:string" minOccurs="0" />
+              <xs:element name="CR_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CURR_x0020_BALANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_ACTIVITY" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_STATEMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="P" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_x0020_AUTHS" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAL_x0020_AUTHS_x0028_前_x0029_" type="xs:string" minOccurs="0" />
+              <xs:element name="AUTHS_x0020_TODAY_x0028_前_x0029_" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OASA_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTION" type="xs:string" minOccurs="0" />
+              <xs:element name="BSP" type="xs:string" minOccurs="0" />
+              <xs:element name="IN-HOUSE" type="xs:string" minOccurs="0" />
+              <xs:element name="NCCC" type="xs:string" minOccurs="0" />
+              <xs:element name="NCCC_x0020_FILE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OAIQ_4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CRD_x0020_ACCPT_x0020_STORE_x002F_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MCC" type="xs:string" minOccurs="0" />
+              <xs:element name="MER_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="POS_x0020_COND_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="POS_x0020_DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="POS_x0020_MODE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OAIQ_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CH_x0020_BILG_x0020_AMT" type="xs:string" minOccurs="0" />
+              <xs:element name="TXN_x0020_AMT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OAIQ_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CNTRY" type="xs:string" minOccurs="0" />
+              <xs:element name="CNVRSN_x0020_RTE" type="xs:string" minOccurs="0" />
+              <xs:element name="CRD_x0020_TYP" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="FWD_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="LOG_x0020_D_x0026_T" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="PROC_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="RESP_x002F_AUTH_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="STIP_x002F_RPT_x0020_TXN" type="xs:string" minOccurs="0" />
+              <xs:element name="TIME_x0020_RCVD" type="xs:string" minOccurs="0" />
+              <xs:element name="TIME_x0020_SENT" type="xs:string" minOccurs="0" />
+              <xs:element name="TXN_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="DECLRSN" type="xs:string" minOccurs="0" />
+              <xs:element name="DECLRSN1" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OAIQ_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACQ_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="REF_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="TRACE_x0020_NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="V_x002F_M_x0020__x0020_ECI_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="分期_x0020_FLAG_x0020_期數" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OAAA_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="交易金額" type="xs:string" minOccurs="0" />
+              <xs:element name="BIN_x002F_ICA" type="xs:string" minOccurs="0" />
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="REQUEST_x0020_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="RESPONSE" type="xs:string" minOccurs="0" />
+              <xs:element name="SELECT" type="xs:string" minOccurs="0" />
+              <xs:element name="交易時間" type="xs:string" minOccurs="0" />
+              <xs:element name="行業別" type="xs:string" minOccurs="0" />
+              <xs:element name="國碼" type="xs:string" minOccurs="0" />
+              <xs:element name="REV_x0020_CODE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OAAA_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="AMT" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="CPMT" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_x0020_LIMIT" type="xs:string" minOccurs="0" />
+              <xs:element name="NBR" type="xs:string" minOccurs="0" />
+              <xs:element name="ORG" type="xs:string" minOccurs="0" />
+              <xs:element name="SHOW_x0020_ADVICE_x0020_STIP_x0020_REASONS" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BNBH-2_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="兌換點數" type="xs:string" minOccurs="0" />
+              <xs:element name="明細說明" type="xs:string" minOccurs="0" />
+              <xs:element name="執行人員" type="xs:string" minOccurs="0" />
+              <xs:element name="序號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BNBH-2_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BONUS" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PREVIOUS" type="xs:string" minOccurs="0" />
+              <xs:element name="SUSPENSE" type="xs:string" minOccurs="0" />
+              <xs:element name="THIS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BNBH-1_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="交易日期" type="xs:string" minOccurs="0" />
+              <xs:element name="兌換點數" type="xs:string" minOccurs="0" />
+              <xs:element name="明細說明" type="xs:string" minOccurs="0" />
+              <xs:element name="執行人員" type="xs:string" minOccurs="0" />
+              <xs:element name="序號" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BNBH-1_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BONUS" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PREVIOUS" type="xs:string" minOccurs="0" />
+              <xs:element name="SUSPENSE" type="xs:string" minOccurs="0" />
+              <xs:element name="THIS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
