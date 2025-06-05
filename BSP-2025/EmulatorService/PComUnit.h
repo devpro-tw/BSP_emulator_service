@@ -668,6 +668,7 @@ public:
         m_Ehllapi = new EhllapiImpl ;
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
         m_ScreenTextFormat = 0 ;
+        OutputDebugString( "new CEHLLEmulator exit" ) ;
         delete tsParams ;
     }
 
