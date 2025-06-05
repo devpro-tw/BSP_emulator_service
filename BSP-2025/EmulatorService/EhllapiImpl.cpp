@@ -61,6 +61,7 @@ namespace HACL	// Host Access Class Library
                 assert(vx);
             }
         }
+        OutputDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
 	}
 
 	// Destruction
