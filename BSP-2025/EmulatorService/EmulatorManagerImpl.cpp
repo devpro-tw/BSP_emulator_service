@@ -72,10 +72,9 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
         try {
             rc = m_emu_executor->ExecService( service.c_str() , params.c_str() , resname , true , btemp , NULL ) ;
             m_emu_executor->ExecService( "InitEnter" , "" , resname , false , btemp , NULL ) ;
-            OutputDebugString( e.Message.c_str() ) ;
         }
         catch( Exception &e ) {
-            OutputDebugString( e.Message.c_str() ) ;
+            OutputDebugString( AnsiString("ExecService Catch:") + e.Message.c_str() ) ;
         }
         catch( ... ) {
             OutputDebugString( "Unknown Exception" ) ;
