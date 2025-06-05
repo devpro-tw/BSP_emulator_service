@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PCIC_1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0032_ND_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="AC" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDR_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_x0020_CSH" type="xs:string" minOccurs="0" />
+              <xs:element name="BANK_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="B-B_x0020_CALL" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLING_x0020_CYCLE" type="xs:string" minOccurs="0" />
+              <xs:element name="BIRTH_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CAR_x0020_PLATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CELL_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="CO-OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="CO-OWNER_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CSH_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="DATE_x0020_LAST_x0020_MAINTENANCE" type="xs:string" minOccurs="0" />
+              <xs:element name="DD_x0020_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DD_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="DIRECT_x0020_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="E-MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYMENT_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="F_x0020_EXPIRY" type="xs:string" minOccurs="0" />
+              <xs:element name="INC" type="xs:string" minOccurs="0" />
+              <xs:element name="LEVEL" type="xs:string" minOccurs="0" />
+              <xs:element name="MAINT_x002F_EFF_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="NATIONALITY" type="xs:string" minOccurs="0" />
+              <xs:element name="OPEN" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="OWNER_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="R1_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="R1_x0020_REL" type="xs:string" minOccurs="0" />
+              <xs:element name="R2_x0020_PH" type="xs:string" minOccurs="0" />
+              <xs:element name="R2_x0020_REL" type="xs:string" minOccurs="0" />
+              <xs:element name="REF1" type="xs:string" minOccurs="0" />
+              <xs:element name="REF2" type="xs:string" minOccurs="0" />
+              <xs:element name="REMARK" type="xs:string" minOccurs="0" />
+              <xs:element name="SHORT_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ST_x002F_CTY" type="xs:string" minOccurs="0" />
+              <xs:element name="STAFF_x0020_NUM" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="STMT_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="TELEPHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="VIP_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="WAIVE_x0020_FLAG" type="xs:string" minOccurs="0" />
+              <xs:element name="WORK_x0020__x0020__x0020_PHONE" type="xs:string" minOccurs="0" />
+              <xs:element name="ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDIT" type="xs:string" minOccurs="0" />
+              <xs:element name="HI" type="xs:string" minOccurs="0" />
+              <xs:element name="ND" type="xs:string" minOccurs="0" />
+              <xs:element name="Service" type="xs:string" minOccurs="0" />
+              <xs:element name="MAINT" type="xs:string" minOccurs="0" />
+              <xs:element name="DD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIC_2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x0031_2MBEH" type="xs:string" minOccurs="0" />
+              <xs:element name="TEMP_x0020_CREDIT_x0020_LINE" type="xs:string" minOccurs="0" />
+              <xs:element name="L6MRG" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_4M_x0020_BEH" type="xs:string" minOccurs="0" />
+              <xs:element name="INITIALS" type="xs:string" minOccurs="0" />
+              <xs:element name="TITLE" type="xs:string" minOccurs="0" />
+              <xs:element name="SEX" type="xs:string" minOccurs="0" />
+              <xs:element name="MARITAL_x0020_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_x0020_OF_x0020_DEPENDANTS" type="xs:string" minOccurs="0" />
+              <xs:element name="HIND-3" type="xs:string" minOccurs="0" />
+              <xs:element name="BEHAVI_x0020_OURAL_x0020_SCORE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER_x0020_CLASS" type="xs:string" minOccurs="0" />
+              <xs:element name="GUARANTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="RISK_x0020_GRADE" type="xs:string" minOccurs="0" />
+              <xs:element name="HOME_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="JOINT_x0020_OWNER" type="xs:string" minOccurs="0" />
+              <xs:element name="TYPE_x0020_OF_x0020_RESIDENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="PERIOD_x0020_OF_x0020_RESIDENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="LEZ_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACORN_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPATION_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="PERIOD_x0020_OF_x0020_OCCUPN" type="xs:string" minOccurs="0" />
+              <xs:element name="EMPLOYER_x0020_CODE" type="xs:string" minOccurs="0" />
+              <xs:element name="EDU" type="xs:string" minOccurs="0" />
+              <xs:element name="CASH_x0020_ADV_x0020_FG" type="xs:string" minOccurs="0" />
+              <xs:element name="OCCUPATION_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="AVAIL_INST" type="xs:string" minOccurs="0" />
+              <xs:element name="CURR_BAL" type="xs:string" minOccurs="0" />
+              <xs:element name="RISKSCORE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIC_3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CARD_x0020_MAILER" type="xs:string" minOccurs="0" />
+              <xs:element name="CO_x0020_MARKET" type="xs:string" minOccurs="0" />
+              <xs:element name="COLLECTION" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_2" type="xs:string" minOccurs="0" />
+              <xs:element name="COMP_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTOMER" type="xs:string" minOccurs="0" />
+              <xs:element name="DIRECT_x0020_MAIL" type="xs:string" minOccurs="0" />
+              <xs:element name="EXPIRY_x0020_DATE" type="xs:string" minOccurs="0" />
+              <xs:element name="IBT_x0020_CASH" type="xs:string" minOccurs="0" />
+              <xs:element name="IVR_x0020_ERR" type="xs:string" minOccurs="0" />
+              <xs:element name="MAIL_x0020_IND" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGANIZATION" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER_x0020_ZIP" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER1" type="xs:string" minOccurs="0" />
+              <xs:element name="OTHER2" type="xs:string" minOccurs="0" />
+              <xs:element name="PIN_x0020_MAILER" type="xs:string" minOccurs="0" />
+              <xs:element name="STATEMENT" type="xs:string" minOccurs="0" />
+              <xs:element name="T-PIN" type="xs:string" minOccurs="0" />
+              <xs:element name="USAGE_x0020_10" type="xs:string" minOccurs="0" />
+              <xs:element name="USAGE_x0020_12" type="xs:string" minOccurs="0" />
+              <xs:element name="STAKEHOLDER" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCIC_4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IC_x002F_PP" type="xs:string" minOccurs="0" />
+              <xs:element name="INCOME" type="xs:string" minOccurs="0" />
+              <xs:element name="LAST_x0020_IC_x002F_PP" type="xs:string" minOccurs="0" />
+              <xs:element name="MOTHER_x0020_MAIDEN_x0020_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="UC_x0020_1" type="xs:string" minOccurs="0" />
+              <xs:element name="UC_x0020_2" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

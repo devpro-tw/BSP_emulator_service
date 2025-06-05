@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PCIC_1>
+    <_x0032_ND_x0020_LINE>0            </_x0032_ND_x0020_LINE>
+    <AC>33333333520888</AC>
+    <ADDR_x0020_1>現居地址１                    </ADDR_x0020_1>
+    <ADDR_x0020_2>現居地址２                    </ADDR_x0020_2>
+    <AVAIL_x0020_CREDIT>20227-      </AVAIL_x0020_CREDIT>
+    <AVAIL_x0020_CSH>0            </AVAIL_x0020_CSH>
+    <BANK_x0020_ID>762</BANK_x0020_ID>
+    <B-B_x0020_CALL>577779      </B-B_x0020_CALL>
+    <BILLING_x0020_CYCLE>14</BILLING_x0020_CYCLE>
+    <BIRTH_x0020_DATE>05141971</BIRTH_x0020_DATE>
+    <CAR_x0020_PLATE xml:space="preserve">       </CAR_x0020_PLATE>
+    <CELL_x0020_PH>0900000000           </CELL_x0020_PH>
+    <CO-OWNER xml:space="preserve">               </CO-OWNER>
+    <CO-OWNER_x0020_IND>0</CO-OWNER_x0020_IND>
+    <CREDIT_x0020_LINE>00000000000</CREDIT_x0020_LINE>
+    <CSH_x0020_LINE>0            </CSH_x0020_LINE>
+    <CUSTOMER>A123123123      </CUSTOMER>
+    <DATE_x0020_LAST_x0020_MAINTENANCE>11/11/2022</DATE_x0020_LAST_x0020_MAINTENANCE>
+    <DD_x0020_ID xml:space="preserve">           </DD_x0020_ID>
+    <DD_x0020_IND>N</DD_x0020_IND>
+    <DIRECT_x0020_MAIL>0</DIRECT_x0020_MAIL>
+    <E-MAIL>EMAIL@HINET.NET                         </E-MAIL>
+    <EMPLOYMENT_x0020_OWNER>統一企業　　　　　　　　　　  </EMPLOYMENT_x0020_OWNER>
+    <F_x0020_EXPIRY>00000000</F_x0020_EXPIRY>
+    <INC>0600 K</INC>
+    <LEVEL xml:space="preserve">  </LEVEL>
+    <MAINT_x002F_EFF_x0020_DATE>00000000</MAINT_x002F_EFF_x0020_DATE>
+    <NAME>測試額度現                                                             </NAME>
+    <NATIONALITY xml:space="preserve"> </NATIONALITY>
+    <OPEN>04281995</OPEN>
+    <ORGANIZATION>001</ORGANIZATION>
+    <OTHER_x0020_PH>774-22222557-     </OTHER_x0020_PH>
+    <OWNER xml:space="preserve">               </OWNER>
+    <OWNER_x0020_IND>0</OWNER_x0020_IND>
+    <R1_x0020_PH xml:space="preserve">                  </R1_x0020_PH>
+    <R1_x0020_REL xml:space="preserve"> </R1_x0020_REL>
+    <R2_x0020_PH xml:space="preserve">                  </R2_x0020_PH>
+    <R2_x0020_REL xml:space="preserve"> </R2_x0020_REL>
+    <REF1 xml:space="preserve">           </REF1>
+    <REF2 xml:space="preserve">           </REF2>
+    <REMARK>臨 2/7-3/7 房屋訂金 650K 479 A36 傅     </REMARK>
+    <SHORT_x0020_NAME>123123123   </SHORT_x0020_NAME>
+    <ST_x002F_CTY xml:space="preserve">  </ST_x002F_CTY>
+    <STAFF_x0020_NUM xml:space="preserve">      </STAFF_x0020_NUM>
+    <STATUS>1</STATUS>
+    <STMT_x0020_IND xml:space="preserve">   </STMT_x0020_IND>
+    <TELEPHONE>72-77952222          </TELEPHONE>
+    <VIP_x0020_CODE xml:space="preserve">  </VIP_x0020_CODE>
+    <WAIVE_x0020_FLAG xml:space="preserve">   </WAIVE_x0020_FLAG>
+    <WORK_x0020__x0020__x0020_PHONE>772-22272725-        </WORK_x0020__x0020__x0020_PHONE>
+    <ZIP>800      </ZIP>
+    <CREDIT>20227-           </CREDIT>
+    <HI xml:space="preserve"> </HI>
+    <ND xml:space="preserve"> </ND>
+    <Service xml:space="preserve">    </Service>
+    <MAINT>04052019</MAINT>
+    <DD>00</DD>
+  </PCIC_1>
+  <PCIC_2>
+    <_x0031_2MBEH>N           </_x0031_2MBEH>
+    <TEMP_x0020_CREDIT_x0020_LINE>002000000    </TEMP_x0020_CREDIT_x0020_LINE>
+    <L6MRG>/  /  /  /  /  /  </L6MRG>
+    <ORGANIZATION>001</ORGANIZATION>
+    <CUSTOMER>A123123123      </CUSTOMER>
+    <_x0032_4M_x0020_BEH>ZZZZZZZZZZZZZZZZZZZZZZZZ</_x0032_4M_x0020_BEH>
+    <INITIALS xml:space="preserve">     </INITIALS>
+    <TITLE xml:space="preserve">     </TITLE>
+    <SEX>1</SEX>
+    <MARITAL_x0020_STATUS>3</MARITAL_x0020_STATUS>
+    <NO_x0020_OF_x0020_DEPENDANTS>00</NO_x0020_OF_x0020_DEPENDANTS>
+    <HIND-3 xml:space="preserve">  </HIND-3>
+    <BEHAVI_x0020_OURAL_x0020_SCORE>01 </BEHAVI_x0020_OURAL_x0020_SCORE>
+    <CUSTOMER_x0020_CLASS>1 </CUSTOMER_x0020_CLASS>
+    <GUARANTOR xml:space="preserve"> </GUARANTOR>
+    <RISK_x0020_GRADE>000</RISK_x0020_GRADE>
+    <HOME_x0020_OWNER>6</HOME_x0020_OWNER>
+    <JOINT_x0020_OWNER>6</JOINT_x0020_OWNER>
+    <TYPE_x0020_OF_x0020_RESIDENCE xml:space="preserve">  </TYPE_x0020_OF_x0020_RESIDENCE>
+    <PERIOD_x0020_OF_x0020_RESIDENCE>01 / 00</PERIOD_x0020_OF_x0020_RESIDENCE>
+    <LEZ_x0020_CODE xml:space="preserve">    </LEZ_x0020_CODE>
+    <ACORN_x0020_CODE xml:space="preserve">    </ACORN_x0020_CODE>
+    <OCCUPATION_x0020_CODE>C1</OCCUPATION_x0020_CODE>
+    <PERIOD_x0020_OF_x0020_OCCUPN>00 / 00</PERIOD_x0020_OF_x0020_OCCUPN>
+    <EMPLOYER_x0020_CODE>992</EMPLOYER_x0020_CODE>
+    <EDU>6</EDU>
+    <CASH_x0020_ADV_x0020_FG>0</CASH_x0020_ADV_x0020_FG>
+    <OCCUPATION_x0020_NAME>受僱員工　</OCCUPATION_x0020_NAME>
+    <AVAIL_INST>20227-    </AVAIL_INST>
+    <CURR_BAL>20227     </CURR_BAL>
+    <RISKSCORE>N   </RISKSCORE>
+  </PCIC_2>
+  <PCIC_3>
+    <CARD_x0020_MAILER xml:space="preserve"> </CARD_x0020_MAILER>
+    <CO_x0020_MARKET>0</CO_x0020_MARKET>
+    <COLLECTION xml:space="preserve"> </COLLECTION>
+    <COMP_x0020_1>公司地址１                    </COMP_x0020_1>
+    <COMP_x0020_2>公司地址２                    </COMP_x0020_2>
+    <COMP_x0020_ZIP>800  </COMP_x0020_ZIP>
+    <CUSTOMER>A123123123      </CUSTOMER>
+    <DIRECT_x0020_MAIL xml:space="preserve"> </DIRECT_x0020_MAIL>
+    <EXPIRY_x0020_DATE>00000000</EXPIRY_x0020_DATE>
+    <IBT_x0020_CASH xml:space="preserve"> </IBT_x0020_CASH>
+    <IVR_x0020_ERR xml:space="preserve"> </IVR_x0020_ERR>
+    <MAIL_x0020_IND>1</MAIL_x0020_IND>
+    <ORGANIZATION>001</ORGANIZATION>
+    <OTHER_x0020_ZIP>800  </OTHER_x0020_ZIP>
+    <OTHER1>戶籍地址１                    </OTHER1>
+    <OTHER2>戶籍地址２                    </OTHER2>
+    <PIN_x0020_MAILER xml:space="preserve"> </PIN_x0020_MAILER>
+    <STATEMENT xml:space="preserve"> </STATEMENT>
+    <T-PIN>9</T-PIN>
+    <USAGE_x0020_10>2</USAGE_x0020_10>
+    <USAGE_x0020_12 xml:space="preserve"> </USAGE_x0020_12>
+    <STAKEHOLDER>0</STAKEHOLDER>
+  </PCIC_3>
+  <PCIC_4>
+    <IC_x002F_PP xml:space="preserve">               </IC_x002F_PP>
+    <INCOME xml:space="preserve">         </INCOME>
+    <LAST_x0020_IC_x002F_PP xml:space="preserve">               </LAST_x0020_IC_x002F_PP>
+    <MOTHER_x0020_MAIDEN_x0020_NAME xml:space="preserve">                               </MOTHER_x0020_MAIDEN_x0020_NAME>
+    <UC_x0020_1 xml:space="preserve">  </UC_x0020_1>
+    <UC_x0020_2 xml:space="preserve">  </UC_x0020_2>
+  </PCIC_4>
+</NewDataSet>
