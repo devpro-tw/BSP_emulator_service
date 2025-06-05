@@ -10,7 +10,7 @@
 // ************************************************************************ //
 
 // C++ TLBWRTR : $Revision:   1.151.1.0.1.27  $
-// File generated on 2025/3/1 ¤U¤È 06:19:29 from Type Library described below.
+// File generated on 2025/6/5 ¤W¤È 11:45:52 from Type Library described below.
 
 // ************************************************************************  //
 // Type Lib: C:\Program Files\Common Files\System\ado\msador15.dll (1)
@@ -21,7 +21,7 @@
 // DepndLst: 
 //   (1) v2.0 stdole, (C:\WINDOWS\system32\stdole2.tlb)
 // Parent TypeLibrary:
-//   (0) v1.0 EmulatorService, (C:\WS\SRC\BSP-2025\EmulatorService\EmulatorService.tlb)
+//   (0) v1.0 EmulatorService, (C:\src\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb)
 // ************************************************************************ //
 #ifndef   ADOR_OCXH
 #define   ADOR_OCXH

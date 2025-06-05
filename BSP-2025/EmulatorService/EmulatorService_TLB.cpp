@@ -10,10 +10,10 @@
 // ************************************************************************ //
 
 // C++ TLBWRTR : $Revision:   1.151.1.0.1.27  $
-// File generated on 2025/3/1 ¤U¤È 06:19:29 from Type Library described below.
+// File generated on 2025/6/5 ¤W¤È 11:45:52 from Type Library described below.
 
 // ************************************************************************  //
-// Type Lib: C:\WS\SRC\BSP-2025\EmulatorService\EmulatorService.tlb (1)
+// Type Lib: C:\src\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb (1)
 // LIBID: {0C508D1F-AE7B-4F43-B4A9-4D9F5E5CC157}
 // LCID: 0
 // Helpfile: 

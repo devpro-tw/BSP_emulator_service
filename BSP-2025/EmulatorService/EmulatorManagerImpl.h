@@ -61,7 +61,7 @@ public:
       BSTR TerminalID);
   int STDMETHODCALLTYPE GetResultCount();
   int STDMETHODCALLTYPE GetResultRecordsetByIndex(int Index,
-      Ador_tlb::_Recordset* Recordset, BSTR* RecordsetName);
+      Ador_tlb::Recordset15* Recordset, BSTR* RecordsetName);
   BSTR STDMETHODCALLTYPE GetLatestScreen();
   BSTR STDMETHODCALLTYPE GetTransactionID();
   BSTR STDMETHODCALLTYPE DecryptFubonString(BSTR CipherText);

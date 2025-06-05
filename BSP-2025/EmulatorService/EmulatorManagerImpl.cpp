@@ -74,7 +74,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
             m_emu_executor->ExecService( "InitEnter" , "" , resname , false , btemp , NULL ) ;
         }
         catch( Exception &e ) {
-            OutputDebugString( AnsiString("ExecService Catch:") + e.Message.c_str() ) ;
+            OutputDebugString( (AnsiString("ExecService Catch:")+ e.Message).c_str() ) ;
         }
         catch( ... ) {
             OutputDebugString( "Unknown Exception" ) ;
@@ -94,7 +94,7 @@ int STDMETHODCALLTYPE TEmulatorManagerImpl::GetResultCount()
 }
 
 int STDMETHODCALLTYPE TEmulatorManagerImpl::GetResultRecordsetByIndex(
-  int Index, Ador_tlb::_Recordset* Recordset, BSTR* RecordsetName)
+  int Index, Ador_tlb::Recordset15* Recordset, BSTR* RecordsetName)
 {
     AnsiString fname = m_AppPath + GetTempFile( "adtg" ) ; // m_AppPath + "rs1-temp.adtg" ;
     TVariant v = WideString(fname.c_str());
