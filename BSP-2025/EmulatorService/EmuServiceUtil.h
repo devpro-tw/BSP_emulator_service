@@ -125,6 +125,9 @@ public :
     CDataSets * m_DataSets ;
     CEmuService( TStrings * Params ) : CEHLLEmulator( /*Params*/ )
     {   try  {
+
+        OutputDebugString( "new CEmuService" ) ;
+
         AnsiString DBName = Params->Values["DBName"];
         AnsiString DBPWDString = Params->Values["DBPWD"];
         if ( DBPWDString.Length() >0 ) DBPWDString = ";Jet OLEDB:Database Password=" + DBPWDString ;
@@ -242,7 +245,7 @@ public :
         sScreenSignature = StringReplace( sScreenSignature , " " , "" , rf ) ;
         AnsiString sCurrentScreenPackData ;
         sCurrentScreenPackData =  StringReplace( Screen , " " , "" , rf ) ;
-        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "�@" , "" , rf ) ;
+        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "�@" , "" , rf ) ; // BIG5 BLANK
         bool bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
         return bSignaturePass ;
     }

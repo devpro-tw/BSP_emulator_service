@@ -23,6 +23,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::Init(BSTR Params)
          OutputDebugString( params.c_str() ) ;
          m_Params->Text = params ;
          m_emu_executor = new CEmuService( m_Params );
+         OutputDebugString( "TEmulatorManagerImpl::Init" ) ;
 
      //}
      m_AppPath = ExtractFilePath(Application->ExeName);
@@ -71,7 +72,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
     else {
         try {
             rc = m_emu_executor->ExecService( service.c_str() , params.c_str() , resname , true , btemp , NULL ) ;
-            m_emu_executor->ExecService( "InitEnter" , "" , resname , false , btemp , NULL ) ;
+            ///m_emu_executor->ExecService( "InitEnter" , "" , resname , false , btemp , NULL ) ;
         }
         catch( Exception &e ) {
             OutputDebugString( (AnsiString("ExecService Catch:")+ e.Message).c_str() ) ;

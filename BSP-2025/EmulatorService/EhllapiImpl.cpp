@@ -27,7 +27,9 @@ namespace HACL	// Host Access Class Library
 	bool EhllapiImpl::Initialize( char * dllpath = NULL )
 	{
         char szDllFileName[255] ;
-        strcpy(szTempDllPath,dllpath) ;
+        ///strcpy(szTempDllPath,dllpath) ;
+
+        
 		//hLib = LoadLibrary("EHLAPI32.DLL");
         //hLib = LoadLibrary("c:\\tn5250nf\\PCSHLL32.DLL") ;
 		return true;
@@ -51,16 +53,18 @@ namespace HACL	// Host Access Class Library
         hLib = NULL ;
         vx = NULL ;
         if ( hLib == NULL ) {
-            sprintf( szDllFileName , "%s\\%s" , dllpath && strlen(dllpath) ? dllpath : "." , "PCSHLL32.DLL") ;
+            /*sprintf( szDllFileName , "%s\\%s" , dllpath && strlen(dllpath) ? dllpath : "." , "PCSHLL32.DLL") ;
             sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath && strlen(dllpath) ? dllpath : "." , GetCurrentThreadId() ) ;
             CopyFile( szDllFileName , szTempDllName , false ) ;
-            hLib = LoadLibrary( szTempDllName );
+            */
+            hLib = LoadLibrary( "c:\\TN3270NF\\PCSHLL32.DLL" );
             if ( hLib != NULL ) {
                 assert(hLib);
                 vx = (_vx)GetProcAddress(hLib, "hllapi");
                 assert(vx);
             }
         }
+        OutputDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
 	}
 
 	// Destruction
