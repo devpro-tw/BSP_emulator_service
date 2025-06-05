@@ -57,7 +57,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
     bool btemp = false ;
     int rc = 0 ;
 
-    OutputDebugString( service.c_str() ) ;
+    OutputDebugString( ("ExecService:" + service).c_str() ) ;
     if ( service.UpperCase() == "ECHO" ) {
         rc = 0 ;
         m_emu_executor->m_DataSets->ClearRecordset();
@@ -72,6 +72,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
         try {
             rc = m_emu_executor->ExecService( service.c_str() , params.c_str() , resname , true , btemp , NULL ) ;
             m_emu_executor->ExecService( "InitEnter" , "" , resname , false , btemp , NULL ) ;
+            OutputDebugString( e.Message.c_str() ) ;
         }
         catch( Exception &e ) {
             OutputDebugString( e.Message.c_str() ) ;

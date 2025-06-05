@@ -239,6 +239,7 @@ ECommLog::ECommLog( AnsiString sSystem , char * sLogPath )
 	nLen = strlen( m_LogPath );
 	if( m_LogPath[nLen-1] != '\\' )
 		strcat( m_LogPath , "\\" );
+    OutputDebugString( ((AnsiString)"Log Path" + m_LogPath).c_str() ) ;
 }
 
 // ¸Ñºc
