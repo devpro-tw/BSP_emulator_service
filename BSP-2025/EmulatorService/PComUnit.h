@@ -93,8 +93,8 @@ public :
         m_Connected = false ;
         if( !m_IniFile )
         {
-            m_logger->WriteLog("���~ : �L�k�}��[%s].","as400.ini");
-            OutputDebugString(AnsiString().sprintf("���~ : �L�k�}��[%s].","as400.ini").c_str());
+            m_logger->WriteLog("Error: Cannot open [%s].","as400.ini");
+            OutputDebugString(AnsiString().sprintf("Error: Cannot open [%s].","as400.ini").c_str());
             Application->Terminate();
         }
         ReadConfigFile();
