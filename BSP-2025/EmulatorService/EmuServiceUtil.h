@@ -242,7 +242,7 @@ public :
         sScreenSignature = StringReplace( sScreenSignature , " " , "" , rf ) ;
         AnsiString sCurrentScreenPackData ;
         sCurrentScreenPackData =  StringReplace( Screen , " " , "" , rf ) ;
-        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "ï¿½@" , "" , rf ) ;
+        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "¡@" , "" , rf ) ;
         bool bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
         return bSignaturePass ;
     }
@@ -489,7 +489,7 @@ public :
                                         bPanelAlreadySeek = true ;
                                         bScrollNextPage = false ;
                                     }
-                                    /*  // ï¿½ï¿½ï¿½ï¿½Iï¿½s
+                                    /*  // ¤£¯à©I¥s
                                         else {
                                         m_logger->WriteLog( "Seek Value Not Exists!" ) ;
                                         ExecResult = srWrongScreen ;
@@ -527,7 +527,7 @@ public :
                                                 temp[rect.Width] = 0 ;
                                                 Param = temp ;
                                             }
-                                            //Param = AnsiReplaceStr( Param , "ï¿½@" , "ï¿½ï¿½" ) ;
+                                            //Param = AnsiReplaceStr( Param , "¤@" , "£¸" ) ;
                                             InputField( "\"" + Param + "\"" , rect.Offset , bEraseField ) ;
                                         //#endif
 
