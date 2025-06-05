@@ -242,7 +242,7 @@ public :
         sScreenSignature = StringReplace( sScreenSignature , " " , "" , rf ) ;
         AnsiString sCurrentScreenPackData ;
         sCurrentScreenPackData =  StringReplace( Screen , " " , "" , rf ) ;
-        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "�@" , "" , rf ) ;
+        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "�@" , "" , rf ) ; // BIG5 BLANK
         bool bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
         return bSignaturePass ;
     }

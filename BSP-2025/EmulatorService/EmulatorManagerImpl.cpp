@@ -23,6 +23,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::Init(BSTR Params)
          OutputDebugString( params.c_str() ) ;
          m_Params->Text = params ;
          m_emu_executor = new CEmuService( m_Params );
+         OutputDebugString( "TEmulatorManagerImpl::Init" ) ;
 
      //}
      m_AppPath = ExtractFilePath(Application->ExeName);
