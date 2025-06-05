@@ -67,16 +67,19 @@ bool RecordsetLocate( TADODataSet * rs , CParamInfo * Params , ECommLog * m_logg
         }
         else {
             m_logger->WriteLog( "Seek Set Param Not Fond !" ) ;
+            OutputDebugString( "Seek Set Param Not Fond !" ) ;
             rc = false ;
         }
         if ( PrevRecNo == rs->RecNo ) {
             m_logger->WriteLog( "Seek No effect !" ) ;
+            OutputDebugString( "Seek No effect !" ) ;
         }
         if ( rc == Variant(false) )
            m_logger->WriteLog( "Seek Data not found %s=[%s]!" , LocateFieldNames.c_str() , FindValues.c_str() ) ;
     }
     catch ( Exception &e ) {
         m_logger->WriteLog( "Seek Data Exception %s , %s=[%s]!" , e.Message.c_str() , LocateFieldNames.c_str() , FindValues.c_str() ) ;
+        OutputDebugString( AnsiString().sprintf("Seek Data Exception %s , %s=[%s]!" , e.Message.c_str() , LocateFieldNames.c_str() , FindValues.c_str()).c_str() ) ;
     }
     return rc ;
 }
@@ -239,7 +242,7 @@ public :
         sScreenSignature = StringReplace( sScreenSignature , " " , "" , rf ) ;
         AnsiString sCurrentScreenPackData ;
         sCurrentScreenPackData =  StringReplace( Screen , " " , "" , rf ) ;
-        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "¡@" , "" , rf ) ;
+        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "ï¿½@" , "" , rf ) ;
         bool bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
         return bSignaturePass ;
     }
@@ -279,8 +282,10 @@ public :
         g_level ++ ;
         int idx = -1 ;
 
-        if ( g_level >15 )
+        if ( g_level >15 ) {
             m_logger->WriteLog( "Warring : Level Stack Over Flow ! " ) ;
+            OutputDebugString( "Warring : Level Stack Over Flow ! " ) ;
+        }
 
         if ( IsStop() )
             goto lbexit ;
@@ -302,10 +307,13 @@ public :
 
         ///if ( InternalOpenSQL( sSQL , ADOQryService ) ) {
         m_logger->WriteLog( "Tick Start : GetServiceStepsByStepNo , Screen Stack Level %d , ServiceName=%s ,ScreenName=%s" , g_level , ServiceName.c_str() , ScreenName.c_str() ) ;
+        OutputDebugString( AnsiString().sprintf("Tick Start : GetServiceStepsByStepNo , Screen Stack Level %d , ServiceName=%s ,ScreenName=%s" , g_level , ServiceName.c_str() , ScreenName.c_str()).c_str() ) ;
         if ( ADOQryService = m_emuinfo->GetServiceStepsByStepNo(ServiceName,ScreenName) ) {
             m_logger->WriteLog( "Tick End : GetServiceStepsByStepNo " ) ;
+            OutputDebugString( "Tick End : GetServiceStepsByStepNo " ) ;
             if  ( ADOQryService->Eof ) {
                 m_logger->WriteLog( "Screen Link Error or Service Not Found , SQL : %s" , sSQL.c_str() ) ;
+                OutputDebugString( AnsiString().sprintf("Screen Link Error or Service Not Found , SQL : %s" , sSQL.c_str()).c_str() ) ;
                 ExecResult = srServiceNotFound ;
                 goto lbexit ;
             }
@@ -338,6 +346,8 @@ public :
 
                 int nPanelCount = ADOQryService->RecordCount ;
                 m_logger->WriteLog( "SN:%s Enter Panel (%d/%d) servicename:%s step:%s\\%s-%s" , SN.c_str() , PanelIdx , nPanelCount , ServiceName.c_str() , ScreenName.c_str() , sProg.c_str() , sPanel.c_str() );
+                OutputDebugString( AnsiString().sprintf("SN:%s Enter Panel (%d/%d) servicename:%s step:%s\\%s-%s" , SN.c_str() , PanelIdx , nPanelCount , ServiceName.c_str() , ScreenName.c_str() , sProg.c_str() , sPanel.c_str()).c_str() );
+
                 AnsiString sPrevPath = m_ScreenPath ;
                 m_ScreenPath = ServiceName + "." + ScreenName + "."+ sProg + "." + sPanel + "-" + IntToStr(PanelIdx)  ;
 
@@ -357,10 +367,13 @@ public :
                     //sSQL.sprintf( "select * from ProgPanelsList where progid='%s' and panelid='%s' " , sSchemaFile.c_str() , sPanel.c_str()) ;
                     //if ( InternalOpenSQL( sSQL , ADOProgPanelList ) ) {
                     m_logger->WriteLog( "Tick Start : GetProgPanelInfo" ) ;
+                    OutputDebugString( "Tick Start : GetProgPanelInfo" ) ;
                     if ( ADOProgPanelList = m_emuinfo->GetProgPanelInfo( sSchemaFile.c_str() , sPanel.c_str() ) ) {
                         m_logger->WriteLog( "Tick End : GetProgPanelInfo" ) ;
+                        OutputDebugString( "Tick End : GetProgPanelInfo" ) ;
                         if  ( ADOProgPanelList->Eof ) {
                             m_logger->WriteLog( "Screen Link Error or Service Not Found , SQL : %s" , sSQL.c_str() ) ;
+                            OutputDebugString( AnsiString().sprintf("Screen Link Error or Service Not Found , SQL : %s" , sSQL.c_str()).c_str() ) ;
                             ExecResult = srScriptError ;
                             goto lbexit ;
                         }
@@ -370,6 +383,7 @@ public :
                     }
                     else {
                         m_logger->WriteLog( "Screen Link error [%s]" , sSQL.c_str() );
+                        OutputDebugString( AnsiString().sprintf("Screen Link error [%s]" , sSQL.c_str()).c_str() );
                     }
 
                     int nPanelType = ADOProgPanelList->FieldByName("Type")->AsInteger ;
@@ -377,8 +391,10 @@ public :
                     //sSQL.sprintf( "select * from proglist where ProgID = '%s' " , sSchemaFile.c_str() ) ;
                     //if ( sSchemaFile.Length() && InternalOpenSQL( sSQL , ADOProgList ) && !ADOProgList->Eof ) {
                     m_logger->WriteLog( "Tick Start : GetProgInfo" ) ;
+                    OutputDebugString( "Tick Start : GetProgInfo" ) ;
                     if ( sSchemaFile.Length() && (ADOProgList = m_emuinfo->GetProgInfo( sSchemaFile )) && !ADOProgList->Eof ) {
                         m_logger->WriteLog( "Tick End : GetProgInfo" ) ;
+                        OutputDebugString( "Tick End : GetProgInfo" ) ;
                          sScreenSignature = ADOProgList->FieldByName("ProgName")->AsString ;
                          bScreenSignatureMatch = CheckScreenSignature( sScreenText , sScreenSignature , tsAttrib , bIsOptionalPanel ) ;
                     }
@@ -394,14 +410,17 @@ public :
                         if ( DataNotFoundMsg.Length() ) {
                             if ( sScreenText.Pos( DataNotFoundMsg ) ) {
                                 m_logger->WriteLog( "Data Not Found Message Matched : '%s' " , DataNotFoundMsg.c_str() );
+                                OutputDebugString( AnsiString().sprintf("Data Not Found Message Matched : '%s' " , DataNotFoundMsg.c_str()).c_str() ) ;
                                 ExecResult = srDataNotFound ;
                             }
                             else
                                 m_logger->WriteLog( "Data Not Found Message Not Matched : '%s' " , DataNotFoundMsg.c_str() );
+                                OutputDebugString( AnsiString().sprintf("Data Not Found Message Not Matched : '%s' " , DataNotFoundMsg.c_str()).c_str() ) ;
                         }
                         else if ( g_level == 1 ) {
                             if ( bIsOptionalPanel ) {
                                 m_logger->WriteLog( "Optional Panel was skipped : %s" , sScreenSignature.c_str() );
+                                OutputDebugString( AnsiString().sprintf("Optional Panel was skipped : %s" , sScreenSignature.c_str()).c_str() ) ;
                                 ADOQryService->Next();
                                 ExecResult = srSuccessed ;
                                 continue ;
@@ -411,6 +430,7 @@ public :
                         }
                         else if ( sPanelType.UpperCase().Pos( "OPTIONAL" ) ) {
                             m_logger->WriteLog( "Optional Panel was skipped : %s" , sScreenSignature.c_str() );
+                            OutputDebugString( AnsiString().sprintf("Optional Panel was skipped : %s" , sScreenSignature.c_str()).c_str() ) ;
                             ADOQryService->Next();
                             ExecResult = srSuccessed ;
                             continue ;
@@ -469,7 +489,7 @@ public :
                                         bPanelAlreadySeek = true ;
                                         bScrollNextPage = false ;
                                     }
-                                    /*  // ¤£¯à©I¥s
+                                    /*  // ï¿½ï¿½ï¿½ï¿½Iï¿½s
                                         else {
                                         m_logger->WriteLog( "Seek Value Not Exists!" ) ;
                                         ExecResult = srWrongScreen ;
@@ -507,7 +527,7 @@ public :
                                                 temp[rect.Width] = 0 ;
                                                 Param = temp ;
                                             }
-                                            //Param = AnsiReplaceStr( Param , "¤@" , "£¸" ) ;
+                                            //Param = AnsiReplaceStr( Param , "ï¿½@" , "ï¿½ï¿½" ) ;
                                             InputField( "\"" + Param + "\"" , rect.Offset , bEraseField ) ;
                                         //#endif
 
@@ -515,11 +535,13 @@ public :
                                         else {
                                             // * ExecResult = srParamError ;
                                             m_logger->WriteLog( "Params %s Not Exists!" , PanelParams->Names[i].c_str() ) ;
+                                            OutputDebugString( AnsiString().sprintf("Params %s Not Exists!" , PanelParams->Names[i].c_str()).c_str() ) ;
                                         }
                                     }
                                     else {
                                         ExecResult = srParamError ;
                                         m_logger->WriteLog( "Find Field [%s] Offset Error !" , PanelParams->Names[i].c_str() ) ;
+                                        OutputDebugString( AnsiString().sprintf("Find Field [%s] Offset Error !" , PanelParams->Names[i].c_str()).c_str() ) ;
                                     }
                                 }
 
@@ -531,14 +553,17 @@ public :
 
                                 if ( ExecResult != srSuccessed ) {
                                     m_logger->WriteLog( "Input Field Error , exit the group" );
+                                    OutputDebugString( "Input Field Error , exit the group" );
                                     goto lbexit ;
                                 }
 
                                 if ( sSubmitKey.Length() ) {
                                     m_logger->WriteLog( "Submit Key [%s] to child panel %s\\%s " , sSubmitKey.c_str() , ServiceName.c_str() , sChildScreen.c_str() ) ;
+                                    OutputDebugString( AnsiString().sprintf("Submit Key [%s] to child panel %s\\%s " , sSubmitKey.c_str() , ServiceName.c_str() , sChildScreen.c_str()).c_str() ) ;
                                     ExecResult = DoStepDebug( sProg.c_str() , sPanel.c_str() , "Send Submit Key Prompt" , sSubmitKey , ExecResult , false )  ;
                                     if ( ExecResult != srSuccessed ) {
                                         m_logger->WriteLog( "Run Child Error , exit the group" );
+                                        OutputDebugString( "Run Child Error , exit the group" );
                                         goto lbexit ;
                                     }
                                     SubmitKey( sSubmitKey )  ;
@@ -547,14 +572,17 @@ public :
                                 if ( sChildScreen.Length() ) {
                                     ExecResult = RunStep( ServiceName , sChildScreen , ServiceParams ) ;
                                     m_logger->WriteLog( "Return on Panel (%d/%d) servicename:%s step:%s\\%s-%s" , PanelIdx , nPanelCount , ServiceName.c_str() , ScreenName.c_str() , sProg.c_str() , sPanel.c_str() );
+                                    OutputDebugString( AnsiString().sprintf("Return on Panel (%d/%d) servicename:%s step:%s\\%s-%s" , PanelIdx , nPanelCount , ServiceName.c_str() , ScreenName.c_str() , sProg.c_str() , sPanel.c_str()).c_str() );
                                     //ReadConfigFile( sSchemaFile.c_str() ) ; // reload config
                                     m_ScreenPath = ServiceName + "." + ScreenName + "."+ sProg + "." + sPanel + "-" + IntToStr(PanelIdx)  ;
                                     if ( nPanelType == 1 ) {// some panel need pagedown when return on previous panel
                                         m_logger->WriteLog( "Panel Type : 1" );
+                                        OutputDebugString( "Panel Type : 1" );
                                         for ( int i = 0 ; i < n_PanelPages ; i++ )
                                             if ( bScrollNextPage ) {
                                                 ExecResult = DoStepDebug( sProg.c_str() , sPanel.c_str() , "Send ScrollDown Key Prompt" , sScrollDown , ExecResult , false )  ;
                                                 m_logger->WriteLog( "Scroll Pagedown Key [%s] " , sScrollDown.c_str() ) ;
+                                                OutputDebugString( AnsiString().sprintf("Scroll Pagedown Key [%s] " , sScrollDown.c_str()).c_str() ) ;
                                                 SubmitKey( sScrollDown ) ;
                                             }
                                     }
@@ -562,6 +590,7 @@ public :
 
                                 if ( ExecResult != srSuccessed ) {
                                     m_logger->WriteLog( "Run Child Error , exit the group" );
+                                    OutputDebugString( "Run Child Error , exit the group" );
                                     goto lbexit ;
                                 }
 
@@ -577,8 +606,10 @@ public :
                             if ( bScrollNextPage ) {
                                 ExecResult = DoStepDebug( sProg.c_str() , sPanel.c_str() , "Send ScrollDown Key Prompt" , sScrollDown , ExecResult , false )  ;
                                 m_logger->WriteLog( "Scroll Pagedown Key [%s] " , sScrollDown.c_str() ) ;
+                                OutputDebugString( AnsiString().sprintf("Scroll Pagedown Key [%s] " , sScrollDown.c_str()).c_str() ) ;
                                 if ( !SubmitKey( sScrollDown ) ) {//if ( m_LastStatus.Pos("X II") ) // bScrollNextPage = false ;
                                     m_logger->WriteLog( "Exception : Scroll down stop , no allow key for scroll down") ;
+                                    OutputDebugString( "Exception : Scroll down stop , no allow key for scroll down") ;
                                     bScrollNextPage = false ;
                                 }
                                 else {
@@ -586,12 +617,13 @@ public :
                                     GetData( sScreenText , "" , tsAttrib , m_WaitForProcessing ) ;
                                     if ( !CheckSignatureData( sScreenText , sScreenSignature ) ) {
                                         m_logger->WriteLog( "Scroll down stop : No Signature Data") ;
+                                        OutputDebugString( "Scroll down stop : No Signature Data") ;
                                         bNoMoreData = true ;
                                         bScrollNextPage = false ;
                                     }
                                     else {
                                         rsPanelData = m_scr->BuildRecordSet(sSchemaFile , sPanel , rsPanelData ) ;
-                                        m_scr->FillDataToRecordSet( sSchemaFile , sPanel, rsPanelData, sScreenText, true , m_ScreenTextFormat ) ;
+                                        m_scr->FillDataToRecordSet( sSchemaFile , sPanel , rsPanelData , sScreenText , true , m_ScreenTextFormat ) ;
                                         AnsiString sCurrentPanelText = m_scr->GetPanelText( sSchemaFile , sPanel ) ;
                                         if ( sPrevPanelText != sCurrentPanelText ) {
                                             if ( sFilter.Length() ) {
@@ -683,8 +715,10 @@ public :
         if ( IsAutoLogin(ServiceName) )
             ServiceParams->SetParamStr( GetLoginParamStr() ) ;
         m_logger->WriteLog( "Run Service Start : Command = %s " , ServiceName.c_str() );
+        OutputDebugString( AnsiString().sprintf("Run Service Start : Command = %s " , ServiceName.c_str()).c_str() );
         EScreenResult rc = RunStep( ServiceName , "" , ServiceParams ) ;
         m_logger->WriteLog( "Run Service End : Command = %s " , ServiceName.c_str() );
+        OutputDebugString( AnsiString().sprintf("Run Service End : Command = %s " , ServiceName.c_str()).c_str() );
         return rc ;
     }
 
@@ -759,6 +793,7 @@ public :
                 m_logger->StartService( ServiceName , m_SessionID ) ;
                 m_DataSets->ClearRecordset();
                 m_logger->WriteLog( "Service Start : Command = %s , Params = %s " , ServiceName.c_str() , ParamStr.c_str() );
+                OutputDebugString( AnsiString().sprintf("Service Start : Command = %s , Params = %s " , ServiceName.c_str() , ParamStr.c_str()).c_str() );
             }
 
             AnsiString sScreen ;
@@ -826,7 +861,9 @@ public :
 
                 m_logger->WriteLog( "Service Execute %s in %d msecs , ResultCode : %d , Recordset Count %d " ,
                     (int(rc)==0) ? "Ok" : "Fail" , GetTickCount() - m_PrevTick , int(rc) , m_DataSets->m_RecordsetList->Count );
+                OutputDebugString( AnsiString().sprintf("Service Execute %s in %d msecs , ResultCode : %d , Recordset Count %d " , (int(rc)==0) ? "Ok" : "Fail" , GetTickCount() - m_PrevTick , int(rc) , m_DataSets->m_RecordsetList->Count).c_str() );
                 m_logger->WriteLog( "Service End" );
+                OutputDebugString( "Service End" );
                 delete ServiceParams ;
                 //if ( !m_Connected )
                     //CloseLink();
@@ -834,15 +871,18 @@ public :
             else {
                 rc = srEmulatorError ;
                 m_logger->WriteLog( "Emulator session : %s open error!" , SessionName.c_str() );
+                OutputDebugString( AnsiString().sprintf("Emulator session : %s open error!" , SessionName.c_str()).c_str() );
             }
             ServiceEnd();
         }
         catch ( Exception &e  ) {
             m_logger->WriteLog( "Service Exception [%s]" ,e.Message.c_str() );
+            OutputDebugString( AnsiString().sprintf("Service Exception [%s]" ,e.Message.c_str()).c_str() );
             CloseLink();
         }
         catch ( ... ) {
             m_logger->WriteLog( "Service Unknown Exception !" );
+            OutputDebugString( "Service Unknown Exception !" );
             CloseLink();
         }
         m_Running = false ;
