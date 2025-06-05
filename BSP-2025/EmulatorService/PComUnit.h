@@ -659,6 +659,7 @@ private :
 public:
     CEHLLEmulator()
     {
+        OutputDebugString( "new CEHLLEmulator" ) ;
         TStrings *tsParams = new TStringList ;
         GetParamsN( tsParams ) ;
         s_cs->Enter();

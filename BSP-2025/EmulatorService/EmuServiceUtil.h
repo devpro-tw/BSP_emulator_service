@@ -125,6 +125,9 @@ public :
     CDataSets * m_DataSets ;
     CEmuService( TStrings * Params ) : CEHLLEmulator( /*Params*/ )
     {   try  {
+
+        OutputDebugString( "new CEmuService" ) ;
+
         AnsiString DBName = Params->Values["DBName"];
         AnsiString DBPWDString = Params->Values["DBPWD"];
         if ( DBPWDString.Length() >0 ) DBPWDString = ";Jet OLEDB:Database Password=" + DBPWDString ;
