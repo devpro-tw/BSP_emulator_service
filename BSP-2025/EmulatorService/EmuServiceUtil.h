@@ -242,7 +242,7 @@ public :
         sScreenSignature = StringReplace( sScreenSignature , " " , "" , rf ) ;
         AnsiString sCurrentScreenPackData ;
         sCurrentScreenPackData =  StringReplace( Screen , " " , "" , rf ) ;
-        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "¡@" , "" , rf ) ;
+        sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "ï¿½@" , "" , rf ) ;
         bool bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
         return bSignaturePass ;
     }
@@ -489,7 +489,7 @@ public :
                                         bPanelAlreadySeek = true ;
                                         bScrollNextPage = false ;
                                     }
-                                    /*  // ¤£¯à©I¥s
+                                    /*  // ï¿½ï¿½ï¿½ï¿½Iï¿½s
                                         else {
                                         m_logger->WriteLog( "Seek Value Not Exists!" ) ;
                                         ExecResult = srWrongScreen ;
@@ -527,7 +527,7 @@ public :
                                                 temp[rect.Width] = 0 ;
                                                 Param = temp ;
                                             }
-                                            //Param = AnsiReplaceStr( Param , "¤@" , "£¸" ) ;
+                                            //Param = AnsiReplaceStr( Param , "ï¿½@" , "ï¿½ï¿½" ) ;
                                             InputField( "\"" + Param + "\"" , rect.Offset , bEraseField ) ;
                                         //#endif
 
@@ -798,6 +798,7 @@ public :
 
             AnsiString sScreen ;
             if ( m_Connected || OpenLink( SessionName ) ) {
+                OutputDebugString("OpenLink successed !" ) ;
                 m_DebugMode = bDebugMode ;
                 g_level = 0 ;
                 bool bIsMainmenu = false ;
@@ -826,6 +827,7 @@ public :
                     else  {
                         if ( WaitForReady( GetTickCount() , 30000 , "Initial Screen" ) != esIdle ) {
                             m_logger->WriteLog( "Emulator Busy Timeout phase 2" ) ;
+                            OutputDebugString("Emulator Busy Timeout phase 2" ) ;
                             bOk = false ;
                         }
                         else
@@ -838,6 +840,7 @@ public :
                 m_logger->WriteLog( "Screen Len %d" , sScreen.Length() ) ;
                 if ( !bOk ) {
                     m_logger->WriteLog( "Exit Service Emulator Busy !" ) ;
+                    OutputDebugString( "Exit Service Emulator Busy !" ) ;
                 }
                 else {
                     if ( (!IsAutoLogin(ServiceName) && !bIsMainmenu ) || (rc = RunService( ServiceName , "" , ServiceParams )) == srInitScreenError ) {

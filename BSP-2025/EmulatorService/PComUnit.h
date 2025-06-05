@@ -93,7 +93,8 @@ public :
         m_Connected = false ;
         if( !m_IniFile )
         {
-            m_logger->WriteLog("¿ù»~ : µLªk¶}±Ò[%s].","as400.ini");
+            m_logger->WriteLog("ï¿½ï¿½ï¿½~ : ï¿½Lï¿½kï¿½}ï¿½ï¿½[%s].","as400.ini");
+            OutputDebugString(AnsiString().sprintf("ï¿½ï¿½ï¿½~ : ï¿½Lï¿½kï¿½}ï¿½ï¿½[%s].","as400.ini").c_str());
             Application->Terminate();
         }
         ReadConfigFile();
@@ -148,6 +149,7 @@ public :
             bOk = doOpenLink(SessionName) ;
             m_Connected = bOk ;
             m_logger->WriteLog("Open Session %s %s !",SessionName.c_str() , bOk ? "Ok": "Fail");
+            OutputDebugString(AnsiString().sprintf("Open Session %s %s !",SessionName.c_str() , bOk ? "Ok": "Fail").c_str());
         }
         __finally {
             s_cs->Leave();
@@ -166,6 +168,7 @@ public :
         AnsiString StatusString ;
         EmulatorStatus rc = esUnexpected ;
         m_logger->WriteLog( "Wait for ready (%d) ..." , nTimeOut ) ;
+        OutputDebugString(AnsiString().sprintf( "Wait for ready (%d) ..." , nTimeOut ).c_str());
         char * status = "Unexpected" ;
         if ( nTimeOut < 0 ) nTimeOut = m_WaitForProcessing ;
         while ( (GetTickCount() - prevtick ) <= nTimeOut && !bOk ) {
@@ -185,6 +188,7 @@ public :
                     break ;
                 case esUnexpected :
                     m_logger->WriteLog( "GetOIA Error" );
+                    OutputDebugString( "GetOIA Error" );
                     break ;
             }
             bOk = ( rc == esIdle ) ;
@@ -192,6 +196,7 @@ public :
                 Wait( m_WaitCommon ) ;
         }
         m_logger->WriteLog( "Wait for ready : %s " , status ) ;
+        OutputDebugString(AnsiString().sprintf( "Wait for ready : %s " , status ).c_str());
         m_Status = rc ;
         return rc ;
     }
@@ -215,7 +220,9 @@ public :
 
         m_Status = WaitForReady( GetTickCount() ) ;
         m_logger->WriteLog( "TickLog \t%s\t%d" , "doExecMacroKey" , GetTickCount()-prevtick ) ;
+        OutputDebugString(AnsiString().sprintf( "TickLog \t%s\t%d" , "doExecMacroKey" , GetTickCount()-prevtick ).c_str());
         m_logger->WriteLog( "SendKey [%s] %s" , sMacro.c_str() , bOk ? "ok" : "fail" ) ;
+        OutputDebugString(AnsiString().sprintf( "SendKey [%s] %s" , sMacro.c_str() , bOk ? "ok" : "fail" ).c_str()) ;
 
         bOk = (m_Status == esIdle) ;
         if ( !bOk )
@@ -228,6 +235,7 @@ public :
     {
         int pos = doGetCursorLocation() ;
         m_logger->WriteLog( "GetCursorLocation : %d" , pos );
+        OutputDebugString(AnsiString().sprintf( "GetCursorLocation : %d" , pos ).c_str());
         return pos ;
     }
 
@@ -271,6 +279,7 @@ public :
                 break ;
         }
         m_logger->WriteLog( "Dump Screen Data %s\n%s\n" , sReason.c_str() , sScreenText.c_str() );
+        OutputDebugString(AnsiString().sprintf( "Dump Screen Data %s\n%s\n" , sReason.c_str() , sScreenText.c_str() ).c_str());
         return sScreenText ;
     }
 
@@ -297,6 +306,7 @@ public :
         }
         if  ( ! WaitForReady( tick , nTimeOut ) ) {
             m_logger->WriteLog( "Get Data Not Ready !" );
+            OutputDebugString( "Get Data Not Ready !" );
             return bOk ;
         }
         bool bSignaturePass , bBusyPass , bIdlePass ;
@@ -308,16 +318,22 @@ public :
         m_logger->WriteLog( "Check %s ScreenSignature \"%s\" " ,
                         bIsOptional ? "Optional" : "Required" ,
                         sScreenSignature.c_str() ) ;
+        OutputDebugString(AnsiString().sprintf( "Check %s ScreenSignature \"%s\" " ,
+                        bIsOptional ? "Optional" : "Required" ,
+                        sScreenSignature.c_str() ).c_str());
         do  {
             sScreenText = GetScreenText( "GetData" ) ;
             AnsiString sCurrentScreenPackData = StringReplace( sScreenText , " " , "" , rf ) ;
-            sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "¡@" , "" , rf ) ;
+            sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "ï¿½@" , "" , rf ) ;
             if ( !bSignaturePass ) {
                 bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
                 if ( !bSignaturePass ) {
                     m_logger->WriteLog( "ScreenSignature \"%s\" not found in CurrentScreenPackData\n\n" ,
                         sScreenSignature.c_str() ,
                         sCurrentScreenPackData.c_str() ) ;
+                    OutputDebugString(AnsiString().sprintf( "ScreenSignature \"%s\" not found in CurrentScreenPackData\n\n" ,
+                        sScreenSignature.c_str() ,
+                        sCurrentScreenPackData.c_str() ).c_str());
 
                     if ( bIsOptional )
                         nTimeOut = 0 ; // No Wait for screen ...
@@ -326,16 +342,21 @@ public :
                 }
                 else
                     m_logger->WriteLog( "ScreenSignature pass !") ;
+                    OutputDebugString( "ScreenSignature pass !" );
             } else if ( !bBusyPass ) {
                 bBusyPass = ( sCurrentScreenPackData.Pos( BusyMsg ) == 0 ) ;
                 if ( ! bBusyPass ) {
                     m_logger->WriteLog( "Busy Message \"%s\" found in CurrentScreenPackData\n\n" ,
                         BusyMsg.c_str() ,
                         sCurrentScreenPackData.c_str() ) ;
+                    OutputDebugString(AnsiString().sprintf( "Busy Message \"%s\" found in CurrentScreenPackData\n\n" ,
+                        BusyMsg.c_str() ,
+                        sCurrentScreenPackData.c_str() ).c_str());
                     Wait( m_WaitCommon );
                 }
                 else
                     m_logger->WriteLog( "Busy pass !") ;
+                    OutputDebugString( "Busy pass !" );
             }
             else if ( !bIdlePass ) {
                 bIdlePass = ( sCurrentScreenPackData.Pos( IdleMsg ) != 0 ) ;
@@ -343,16 +364,21 @@ public :
                     m_logger->WriteLog( "Idle Message \"%s\" not found in CurrentScreenPackData\n\n" ,
                         IdleMsg.c_str() ,
                         sCurrentScreenPackData.c_str() ) ;
+                    OutputDebugString(AnsiString().sprintf( "Idle Message \"%s\" not found in CurrentScreenPackData\n\n" ,
+                        IdleMsg.c_str() ,
+                        sCurrentScreenPackData.c_str() ).c_str());
                     Wait( m_WaitCommon );
                 }
                 else
                     m_logger->WriteLog( "Idle pass !") ;
+                    OutputDebugString( "Idle pass !" );
             }
             bOk = bSignaturePass && bBusyPass && bIdlePass ;
             //}
         } while ( (GetTickCount()-tick) <= nTimeOut && !bOk ) ;
 
         m_logger->WriteLog( "TickLog \t%s\t%d" , "GetData" , GetTickCount()-prevtick ) ;
+        OutputDebugString(AnsiString().sprintf( "TickLog \t%s\t%d" , "GetData" , GetTickCount()-prevtick ).c_str()) ;
 
         sData = sScreenText ;
         return bOk ;
@@ -369,6 +395,7 @@ public :
         AnsiString sLog = "Input :" + KeyString + " at position : " + Pos;
         AnsiString sMacro ;
         m_logger->WriteLog(sLog.c_str());
+        OutputDebugString(sLog.c_str());
 
         if ( Pos.ToIntDef(0) > 0) {
             SetCursor(Pos) ;
@@ -391,6 +418,7 @@ public :
         delete tsKeyList ;
         //*WaitForReady( GetTickCount() ) ;
         m_logger->WriteLog( "TickLog \t%s\t%d" , "InputField" , GetTickCount()-prevtick ) ;
+        OutputDebugString(AnsiString().sprintf( "TickLog \t%s\t%d" , "InputField" , GetTickCount()-prevtick ).c_str()) ;
         return nErrCount ;
     }
 
@@ -404,6 +432,7 @@ public :
         AnsiString sLog = "Key : " + SubmitKey ;
         AnsiString sMacro ;
         m_logger->WriteLog(sLog.c_str());
+        OutputDebugString(sLog.c_str());
 
         m_Status = WaitForReady( GetTickCount() ) ;
 
@@ -419,6 +448,7 @@ public :
             // Send Key
             if ( c )
                 m_logger->WriteLog( "Error : submit keys %s %d time(s)" , SubmitKey.c_str() , c );
+            OutputDebugString(AnsiString().sprintf( "Error : submit keys %s %d time(s)" , SubmitKey.c_str() , c ).c_str());
             for ( int i = 0 ; i < tsKeyList->Count && bOk ; i++  ) {
                 AnsiString sKey = tsKeyList->Strings[i].Trim() ;
                 if ( sKey.Length() ) {
@@ -444,6 +474,7 @@ public :
         m_Status = WaitForReady( GetTickCount() ) ;
         delete tsKeyList ;
         m_logger->WriteLog( "TickLog \t%s\t%d" , "SubmitKey" , GetTickCount()-prevtick ) ;
+        OutputDebugString(AnsiString().sprintf( "TickLog \t%s\t%d" , "SubmitKey" , GetTickCount()-prevtick ).c_str()) ;
         return bOk ;
     }
 
@@ -451,6 +482,7 @@ public :
     {
         AnsiString sLog = "SetCursor:" + Pos;
         m_logger->WriteLog(sLog.c_str());
+        OutputDebugString(sLog.c_str());
         bool bOk = true ;
         if ( m_TraceMode != 2 )
             bOk = doSetCursor( Pos ) ;
