@@ -10,18 +10,18 @@
 // ************************************************************************ //
 
 // C++ TLBWRTR : $Revision:   1.151.1.0.1.27  $
-// File generated on 2025/6/5 ¤W¤È 11:45:52 from Type Library described below.
+// File generated on 6/24/2025 1:44:03 PM from Type Library described below.
 
 // ************************************************************************  //
-// Type Lib: C:\Program Files\Common Files\System\ado\msador15.dll (1)
+// Type Lib: C:\Program Files (x86)\Common Files\System\ado\msador28.tlb (1)
 // LIBID: {00000300-0000-0010-8000-00AA006D2EA4}
 // LCID: 0
-// Helpfile: C:\Program Files\Common Files\System\ado\ado270.chm
+// Helpfile: 
 // HelpString: Microsoft ActiveX Data Objects Recordset 2.8 Library
 // DepndLst: 
-//   (1) v2.0 stdole, (C:\WINDOWS\system32\stdole2.tlb)
+//   (1) v2.0 stdole, (C:\Windows\SysWOW64\stdole2.tlb)
 // Parent TypeLibrary:
-//   (0) v1.0 EmulatorService, (C:\src\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb)
+//   (0) v1.0 EmulatorService, (C:\Github\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb)
 // ************************************************************************ //
 #ifndef   ADOR_TLBH
 #define   ADOR_TLBH
@@ -73,6 +73,7 @@ namespace Ador_tlb
 //   Non-DISP interfaces: IID_xxxx                                        
 // *********************************************************************//
 extern "C" const __declspec(selectany) GUID LIBID_ADOR = {0x00000300, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
+extern "C" const __declspec(selectany) GUID GUID_ADO_LONGPTR = {0x54D8B4B9, 0x663B, 0x4A9C,{ 0x95, 0xF6, 0x0E,0x74, 0x9A, 0xBD,0x70, 0xF1} };
 extern "C" const __declspec(selectany) GUID GUID_CursorTypeEnum = {0x0000051B, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
 extern "C" const __declspec(selectany) GUID GUID_CursorOptionEnum = {0x0000051C, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
 extern "C" const __declspec(selectany) GUID GUID_LockTypeEnum = {0x0000051D, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
@@ -127,7 +128,6 @@ extern "C" const __declspec(selectany) GUID IID_Fields20 = {0x0000054D, 0x0000, 
 extern "C" const __declspec(selectany) GUID IID_Fields = {0x00000564, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
 extern "C" const __declspec(selectany) GUID IID_Field20 = {0x0000054C, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
 extern "C" const __declspec(selectany) GUID IID_Field = {0x00000569, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
-extern "C" const __declspec(selectany) GUID GUID_ADO_LONGPTR = {0x54D8B4B9, 0x663B, 0x4A9C,{ 0x95, 0xF6, 0x0E,0x74, 0x9A, 0xBD,0x70, 0xF1} };
 extern "C" const __declspec(selectany) GUID IID_ADORecordsetConstruction = {0x00000283, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
 extern "C" const __declspec(selectany) GUID IID_Field15 = {0x00000505, 0x0000, 0x0010,{ 0x80, 0x00, 0x00,0xAA, 0x00, 0x6D,0x2E, 0xA4} };
 
@@ -236,9 +236,9 @@ typedef Recordset15Ptr RecordsetPtr;
 // *********************************************************************//
 // Declaration of Aliases defined in Type Library                         
 // *********************************************************************//
+typedef long ADO_LONGPTR;
 typedef Ador_tlb::PositionEnum PositionEnum_Param;
 typedef Ador_tlb::SearchDirectionEnum SearchDirection;
-typedef long ADO_LONGPTR;
 
 // *********************************************************************//
 // Declaration of Enumerations defined in Type Library                    

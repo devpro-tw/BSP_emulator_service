@@ -10,18 +10,18 @@
 // ************************************************************************ //
 
 // C++ TLBWRTR : $Revision:   1.151.1.0.1.27  $
-// File generated on 2025/6/5 ¤W¤È 11:45:52 from Type Library described below.
+// File generated on 6/24/2025 1:44:04 PM from Type Library described below.
 
 // ************************************************************************  //
-// Type Lib: C:\Program Files\Common Files\System\ado\msador15.dll (1)
+// Type Lib: C:\Program Files (x86)\Common Files\System\ado\msador28.tlb (1)
 // LIBID: {00000300-0000-0010-8000-00AA006D2EA4}
 // LCID: 0
-// Helpfile: C:\Program Files\Common Files\System\ado\ado270.chm
+// Helpfile: 
 // HelpString: Microsoft ActiveX Data Objects Recordset 2.8 Library
 // DepndLst: 
-//   (1) v2.0 stdole, (C:\WINDOWS\system32\stdole2.tlb)
+//   (1) v2.0 stdole, (C:\Windows\SysWOW64\stdole2.tlb)
 // Parent TypeLibrary:
-//   (0) v1.0 EmulatorService, (C:\src\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb)
+//   (0) v1.0 EmulatorService, (C:\Github\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb)
 // Errors:
 //   Hint: Symbol 'EOF' renamed to 'EOF_'
 //   Hint: Symbol 'Update' renamed to '_Update'

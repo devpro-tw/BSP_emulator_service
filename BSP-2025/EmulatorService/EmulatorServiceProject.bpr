@@ -16,19 +16,18 @@
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) EStepDebug.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="vclnp.lib SUIPackC6.lib ao400.lib MyPackage.lib PaxScripter_BCB6.lib 
-      bcb2kaxserver.lib indy.lib dbxcds.lib dclocx.lib soaprtl.lib bcbie.lib 
-      nmfast.lib dbexpress.lib inetdbxpress.lib inetdbbde.lib bcbsmp.lib 
-      dsnapcon.lib dsnapcrba.lib visualdbclx.lib teeqr.lib dss.lib teedb.lib 
-      teeui.lib vcldbx.lib qrpt.lib bdecds.lib cds.lib ibxpress.lib 
-      EngsoundC6.lib adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib 
-      vcl.lib rtl.lib"/>
+    <LIBRARIES value="vclnp.lib ao400.lib MyPackage.lib PaxScripter_BCB6.lib bcb2kaxserver.lib 
+      indy.lib dbxcds.lib dclocx.lib soaprtl.lib bcbie.lib nmfast.lib 
+      dbexpress.lib inetdbxpress.lib inetdbbde.lib bcbsmp.lib dsnapcon.lib 
+      dsnapcrba.lib visualdbclx.lib teeqr.lib dss.lib teedb.lib teeui.lib 
+      vcldbx.lib qrpt.lib bdecds.lib cds.lib ibxpress.lib EngsoundC6.lib 
+      adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib vcl.lib rtl.lib"/>
     <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib bdertl.lib vclx.lib tee.lib adortl.lib 
       EngsoundC6.lib ibxpress.lib cds.lib bdecds.lib qrpt.lib vcldbx.lib 
       teeui.lib teedb.lib dss.lib teeqr.lib visualdbclx.lib dsnapcrba.lib 
       dsnapcon.lib bcbsmp.lib inetdbbde.lib inetdbxpress.lib dbexpress.lib 
       nmfast.lib bcbie.lib soaprtl.lib dclocx.lib dbxcds.lib indy.lib 
-      bcb2kaxserver.lib PaxScripter_BCB6.lib MyPackage.lib ao400.lib SUIPackC6.lib"/>
+      bcb2kaxserver.lib PaxScripter_BCB6.lib MyPackage.lib ao400.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi dbrtl.bpi adortl.bpi vcldb.bpi bdertl.bpi 
       vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi visualclx.bpi visualdbclx.bpi 
       dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
