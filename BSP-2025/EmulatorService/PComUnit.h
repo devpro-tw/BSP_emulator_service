@@ -323,8 +323,8 @@ public :
                         sScreenSignature.c_str() ).c_str());
         do  {
             sScreenText = GetScreenText( "GetData" ) ;
-            AnsiString sCurrentScreenPackData = StringReplace( sScreenText , " " , "" , rf ) ;
-            sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "�@" , "" , rf ) ;
+            AnsiString sCurrentScreenPackData = StringReplace( sScreenText , "" , "" , rf ) ;
+            sCurrentScreenPackData = StringReplace( sCurrentS creenPackData , "　" , "" , rf ) ;
             if ( !bSignaturePass ) {
                 bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
                 if ( !bSignaturePass ) {
