@@ -325,7 +325,6 @@ public :
         do  {
             sScreenText = GetScreenText( "GetData" ) ;
             AnsiString sCurrentScreenPackData = StringReplace( sScreenText , "" , "" , rf ) ;
-            //sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "???" , "" , rf ) ;
             sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "¡@" , "" , rf ) ; // BIG5 BLANK
 
             if ( !bSignaturePass ) {
