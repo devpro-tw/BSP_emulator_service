@@ -16,48 +16,21 @@ static char THIS_FILE[]=__FILE__;
 #define new DEBUG_NEW
 #endif
 using namespace std;
-char szTempDllPath[255] ;
+
 namespace HACL	// Host Access Class Library
 {
 //////////////////////////////////////////////////////////////////////
 // EhllapiImpl Class
 //////////////////////////////////////////////////////////////////////
 
-	// Initialize api library
-	bool EhllapiImpl::Initialize( char * dllpath = NULL )
+// Initialize api library
+bool EhllapiImpl::Initialize( char * dllpath )
 	{
-        char szDllFileName[255] ;
-        ///strcpy(szTempDllPath,dllpath) ;
-
-        
-		//hLib = LoadLibrary("EHLAPI32.DLL");
-        //hLib = LoadLibrary("c:\\tn5250nf\\PCSHLL32.DLL") ;
-		return true;
-	}
-
-	// release api library
-	void EhllapiImpl::UnInitialize(void)
-	{
-        /*if ( hLib != NULL ) {
-            FreeLibrary(hLib);
-            DeleteFile( szTempDllName ) ;
-        }   */
-	}
-
-	// Construction
-	EhllapiImpl::EhllapiImpl()
-		:m_IsConnect(false), m_SessionId(0)
-	{
-        prevtick = 0 ;
-        char * dllpath = szTempDllPath ;
-        hLib = NULL ;
-        vx = NULL ;
-        if ( hLib == NULL ) {
-            /*sprintf( szDllFileName , "%s\\%s" , dllpath && strlen(dllpath) ? dllpath : "." , "PCSHLL32.DLL") ;
-            sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath && strlen(dllpath) ? dllpath : "." , GetCurrentThreadId() ) ;
+		if ( hLib == NULL ) {
+            sprintf( szDllFileName , "%s\\%s" , dllpath && strlen(dllpath) ? dllpath : "." , "PCSHLL32.DLL") ;
+            sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
             CopyFile( szDllFileName , szTempDllName , false ) ;
-            */
-            hLib = LoadLibrary( "c:\\TN3270NF\\PCSHLL32.DLL" );
+            hLib = LoadLibrary( szDllFileName );
             if ( hLib != NULL ) {
                 assert(hLib);
                 vx = (_vx)GetProcAddress(hLib, "hllapi");
@@ -65,13 +38,37 @@ namespace HACL	// Host Access Class Library
             }
         }
         DevproDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
+
+		return hLib != NULL;
+	}
+
+	// release api library
+	void EhllapiImpl::UnInitialize(void)
+	{
+        if ( hLib != NULL ) {
+            FreeLibrary(hLib);
+            DeleteFile( szTempDllName ) ;
+			hLib = NULL;
+			vx = NULL;
+        }   
+	}
+
+	// Construction
+	EhllapiImpl::EhllapiImpl( char*dllpath)
+		:m_IsConnect(false), m_SessionId(0)
+	{
+        prevtick = 0 ;
+        
+		strcpy(szTempDllPath,dllpath);
+        hLib = NULL ;
+        vx = NULL ;
+		Initialize( szTempDllPath );
 	}
 
 	// Destruction
 	EhllapiImpl::~EhllapiImpl()
 	{
-        FreeLibrary( hLib ) ;
-        DeleteFile( szTempDllName ) ;
+        UnInitialize();
 	}
 
 	void EhllapiImpl::SessionId(char id)

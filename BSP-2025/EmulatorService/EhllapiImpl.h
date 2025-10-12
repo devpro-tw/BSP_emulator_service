@@ -38,6 +38,8 @@ namespace HACL	// Host Access Class Library
         _vx vx ;
         char szTempDllName[255] ;
         char szDllFileName[255] ;
+        char szTempDllPath[255] ;
+
 		bool m_IsConnect;
 
 	protected:
@@ -64,7 +66,7 @@ namespace HACL	// Host Access Class Library
 
 	public:
 		// constructor
-		EhllapiImpl();
+		EhllapiImpl( char*);
 		// destructor
 		virtual ~EhllapiImpl();
 		// COPY_OIA
@@ -124,9 +126,9 @@ namespace HACL	// Host Access Class Library
 		// QUERY_FIELD_ATTR
 		int FieldAttribute(int row, int col);
 		// Initialize api library
-		static bool Initialize( char * dllpath );
+                bool Initialize( char * dllpath );
 		// release api library
-		static void UnInitialize(void);
+                void UnInitialize(void);
 	};
 }	// namespace HACL
 #endif // __EHLLAPIIMPL_H__

@@ -1,0 +1,38 @@
+{
+  "files.encoding": "big5",
+  "files.autoGuessEncoding": false,
+  "files.associations": {
+    "*.cpp": "cpp",
+    "*.h": "c",
+    "*.c": "c",
+    "*.bat": "bat",
+    "*.ini": "ini",
+    "*.mak": "makefile",
+    "*.dfm": "pascal"
+  },
+  "[cpp]": {
+    "files.encoding": "big5"
+  },
+  "[c]": {
+    "files.encoding": "big5"
+  },
+  "[h]": {
+    "files.encoding": "big5"
+  },
+  "[bat]": {
+    "files.encoding": "big5"
+  },
+  "[ini]": {
+    "files.encoding": "big5"
+  },
+  "[mak]": {
+    "files.encoding": "big5"
+  },
+  "[makefile]": {
+    "files.encoding": "big5"
+  },
+  "[pascal]": {
+    "files.encoding": "big5"
+  }
+}
+

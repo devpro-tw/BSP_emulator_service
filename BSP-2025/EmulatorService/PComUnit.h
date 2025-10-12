@@ -325,7 +325,9 @@ public :
         do  {
             sScreenText = GetScreenText( "GetData" ) ;
             AnsiString sCurrentScreenPackData = StringReplace( sScreenText , "" , "" , rf ) ;
-            sCurrentScreenPackData = StringReplace( sCurrentS creenPackData , "ã€€" , "" , rf ) ;
+            //sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "???" , "" , rf ) ;
+            sCurrentScreenPackData = StringReplace( sCurrentScreenPackData , "¡@" , "" , rf ) ; // BIG5 BLANK
+
             if ( !bSignaturePass ) {
                 bSignaturePass = ( sCurrentScreenPackData.Pos( sScreenSignature ) != 0 ) ;
                 if ( !bSignaturePass ) {
@@ -663,10 +665,10 @@ public:
         DevproDebugString( "new CEHLLEmulator" ) ;
         TStrings *tsParams = new TStringList ;
         GetParamsN( tsParams ) ;
-        s_cs->Enter();
-        EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
+        //s_cs->Enter();
+        //EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
         s_cs->Leave();
-        m_Ehllapi = new EhllapiImpl ;
+        m_Ehllapi = new EhllapiImpl( tsParams->Values["DLLPATH"].c_str() ) ;
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
         m_ScreenTextFormat = 0 ;
         DevproDebugString( "new CEHLLEmulator exit" ) ;

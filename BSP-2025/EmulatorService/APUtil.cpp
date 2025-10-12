@@ -347,3 +347,9 @@ AnsiString GetVersionStr( void )
 
     return sVerStr ;
 }
+
+// Debug output function (only outputs when gIsDebugMode = true)
+void DevproDebugString(const char* message)
+{
+        if( gIsDebugMode )  OutputDebugString( message) ;
+}
