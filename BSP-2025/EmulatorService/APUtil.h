@@ -9,8 +9,11 @@
 #include <stdio.h>
 enum EM_ENTRY_MODE { emOpen = 0, emEdit = 1 , emNew = 2 , emBrowse = 3 , emLocate = 4 , emLookup = 5 , emImport = 6 } ;
 
-// 是否為 Debug Mode
+// Debug Mode flag
 extern bool gIsDebugMode  ;
+
+// Debug output function (only outputs when gIsDebugMode = true)
+void DevproDebugString(const char* message);
 
 extern AnsiString FillZero(AnsiString sSrc, int DescLen);
 extern AnsiString ChangeDateFmt(AnsiString sDate);
@@ -20,16 +23,16 @@ extern AnsiString CheckFileNameNum(AnsiString sFileName);
 extern int LoadFromUniCodeFile(TStrings* ss, const String& fname);
 extern void SaveToUniCodeFile(TStrings* ss, const String& fname);
 
-// 代換字串函數
+// Quick replace string
 char * QuickReplaceStr( char * Dest , char * sSource , char * sSearch , char * sReplaceWith ) ;
-// 處理 SQL 字串內容
+// Process SQL string content
 AnsiString ParamStr( AnsiString sParam ) ;
-// 處理 SQL 數值內容
+// Process SQL numeric value
 AnsiString ParamInt( AnsiString sParam ) ;
 
-// 組合檔案路徑
+// Combine file path
 AnsiString CheckFilePath( char * path , char *filename ) ;
-// 處理 Excel 字串內容
+// Process Excel string content
 AnsiString ExcelStr( AnsiString sStr ) ;
 
 AnsiString GetBookmarkStringsByField( TDBGrid * dbGrid , TADOQuery * adoQuery , AnsiString sFieldName ) ;
@@ -40,24 +43,24 @@ AnsiString GetVersionStr( void );
 // CommLog Class
 // =========================================================================
 
-// Comm Log 物件
+// Comm Log class
 class ECommLog
 {
 
 private:
         int m_servicecount ;
-		// 記錄 Log 目錄
+		// Log directory path
 		char m_LogPath[_MAX_PATH] ;
-		// 建立目錄
+		// Create directory
 		bool CreateDir( char * sFilePath ) ;
         AnsiString m_TransactionID ;
         AnsiString m_System ;
 
 public:
         bool m_WriteToFile ;
-		// 建構
+		// Constructor
 		ECommLog( AnsiString sSystem , char * sLogPath = NULL ) ;
-		// 解構
+		// Destructor
 		~ECommLog() ;
 
         void StartService( AnsiString Service , AnsiString TermID ) {
@@ -75,14 +78,14 @@ public:
             va_start( parg, fmt);
             sLog.vprintf( fmt , parg ) ;
             va_end(parg);
-            OutputDebugString( sLog.c_str() );
+            DevproDebugString( sLog.c_str() );
             bool bLogToFile = true ;
             FILE * elog_fp ;
             if ( bLogToFile ) {
                 if( (elog_fp=fopen( filename ,"at")) != NULL ) {
-                    // 寫入時間 & Log
+                    // Write timestamp & Log
                     fprintf( elog_fp , "%s\t%08d\t%04d\t%s" , Now().FormatString("yyyy/mm/dd hh:nn:ss").c_str() , GetTickCount() , GetCurrentThreadId() , sLog.c_str() ) ;
-                    // 加入換行字元
+                    // Add newline character
                     fprintf( elog_fp , "\n") ;
                     fclose(elog_fp);
                 } // if
@@ -90,7 +93,7 @@ public:
             return ;
         }
 
-        // 寫入 Log
+        // Write Log
         void WriteLog( char * fmt , ... )
         {
             if ( !m_WriteToFile ) return ;
@@ -99,16 +102,16 @@ public:
             va_start( parg, fmt);
             sLog.vprintf( fmt , parg ) ;
             va_end(parg);
-            OutputDebugString( sLog.c_str() );
+            DevproDebugString( sLog.c_str() );
             bool bLogToFile = true ;
             //AnsiString sFileName ;
             FILE * elog_fp ;
             //sFileName.sprintf( "./log/DebugString%s-%s.log" , m_TransactionID.c_str() , Now().FormatString("yyyymmdd").c_str() ) ;
             if ( bLogToFile ) {
                 if( (elog_fp=fopen( GetFileName().c_str() ,"at")) != NULL ) {
-                    // 寫入時間 & Log
+                    // Write timestamp & Log
                     fprintf( elog_fp , "%s\t%04d\t%d\t%s" , Now().FormatString("yyyy/mm/dd hh:nn:ss").c_str() , GetCurrentThreadId() , GetTickCount() , sLog.c_str() ) ;
-                    // 加入換行字元
+                    // Add newline character
                     fprintf( elog_fp , "\n") ;
                     fclose(elog_fp);
                 } // if
@@ -128,7 +131,7 @@ public:
             return false ;
     }
 
-// 宣告 Global Comm Log 物件
+// Declare Global Comm Log object
 extern ECommLog * g_CommLog ;
 
 #endif

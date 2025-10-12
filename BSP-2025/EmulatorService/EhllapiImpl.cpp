@@ -64,7 +64,7 @@ namespace HACL	// Host Access Class Library
                 assert(vx);
             }
         }
-        OutputDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
+        DevproDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
 	}
 
 	// Destruction
@@ -398,7 +398,7 @@ namespace HACL	// Host Access Class Library
 		memset(m_szStr, 0, sizeof(m_szStr));
 		int ret = call_api();
 		if (ret != 0)
-			OutputDebugString("CGSAPI:QUERY_SYSYEM FAIL");
+			DevproDebugString("CGSAPI:QUERY_SYSYEM FAIL");
 	}
 
 	// START_HOST_NOTIFY
