@@ -18,7 +18,7 @@
 ECommLog * g_CommLog ;
 
 // ¬O§_¬° Debug Mode
-bool gIsDebugMode  ;
+bool gIsDebugMode = false ;
 
 // =========================================================================
 // Private Functions
@@ -239,7 +239,7 @@ ECommLog::ECommLog( AnsiString sSystem , char * sLogPath )
 	nLen = strlen( m_LogPath );
 	if( m_LogPath[nLen-1] != '\\' )
 		strcat( m_LogPath , "\\" );
-    OutputDebugString( ((AnsiString)"Log Path" + m_LogPath).c_str() ) ;
+    DevproDebugString( ((AnsiString)"Log Path" + m_LogPath).c_str() ) ;
 }
 
 // ¸Ñºc
@@ -346,4 +346,10 @@ AnsiString GetVersionStr( void )
     delete [] bVerInfoBuf ;
 
     return sVerStr ;
+}
+
+// Debug output function (only outputs when gIsDebugMode = true)
+void DevproDebugString(const char* message)
+{
+        if( gIsDebugMode )  OutputDebugString( message) ;
 }

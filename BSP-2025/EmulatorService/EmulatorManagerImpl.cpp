@@ -5,6 +5,7 @@
 #pragma hdrstop
 
 #include "EMULATORMANAGERIMPL.H"
+#include "APUtil.h"
 
 
 
@@ -20,17 +21,17 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::Init(BSTR Params)
      //if ( m_emu_executor == NULL ) {
          m_Params = new TStringList();
          AnsiString params = Params ;
-         OutputDebugString( params.c_str() ) ;
+         DevproDebugString( params.c_str() ) ;
          m_Params->Text = params ;
          m_emu_executor = new CEmuService( m_Params );
-         OutputDebugString( "TEmulatorManagerImpl::Init" ) ;
+         DevproDebugString( "TEmulatorManagerImpl::Init" ) ;
 
      //}
      m_AppPath = ExtractFilePath(Application->ExeName);
   }
   catch(Exception &e)
   {
-    OutputDebugString( e.Message.c_str() ) ;
+    DevproDebugString( e.Message.c_str() ) ;
     return Error(e.Message.c_str(), IID_IEmulatorManager);
   }
   return S_OK;
@@ -58,7 +59,7 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
     bool btemp = false ;
     int rc = 0 ;
 
-    OutputDebugString( ("ExecService:" + service).c_str() ) ;
+    DevproDebugString( ("ExecService:" + service).c_str() ) ;
     if ( service.UpperCase() == "ECHO" ) {
         rc = 0 ;
         m_emu_executor->m_DataSets->ClearRecordset();
@@ -75,10 +76,10 @@ ExecResult STDMETHODCALLTYPE TEmulatorManagerImpl::ExecService(
             ///m_emu_executor->ExecService( "InitEnter" , "" , resname , false , btemp , NULL ) ;
         }
         catch( Exception &e ) {
-            OutputDebugString( (AnsiString("ExecService Catch:")+ e.Message).c_str() ) ;
+            DevproDebugString( (AnsiString("ExecService Catch:")+ e.Message).c_str() ) ;
         }
         catch( ... ) {
-            OutputDebugString( "Unknown Exception" ) ;
+            DevproDebugString( "Unknown Exception" ) ;
         }
     }
 
