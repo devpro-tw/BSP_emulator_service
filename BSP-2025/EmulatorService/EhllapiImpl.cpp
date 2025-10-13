@@ -61,7 +61,7 @@ bool EhllapiImpl::Initialize( char * dllpath )
 	EhllapiImpl::EhllapiImpl( char*dllpath )
 		:m_IsConnect(false), m_SessionId(0)
 	{
-                //DevproDebugString( AnsiString().sprintf( "EhllapiImpl::EhllapiImpl , %s" ,dllpath ).c_str()) ;
+                DevproDebugString( AnsiString().sprintf( "EhllapiImpl::EhllapiImpl " ).c_str()) ;
                 prevtick = 0 ;
 
 		//strcpy(szDllPath,dllpath);
