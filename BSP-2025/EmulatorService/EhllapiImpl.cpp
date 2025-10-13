@@ -57,7 +57,7 @@ bool EhllapiImpl::Initialize( char * dllpath )
 	}
 
 	// Construction
-	EhllapiImpl::EhllapiImpl( char*dllpath  = "c:\\TN3270NF" )
+	EhllapiImpl::EhllapiImpl( char*dllpath )
 		:m_IsConnect(false), m_SessionId(0)
 	{
                 DevproDebugString( "EhllapiImpl::EhllapiImpl" ) ;

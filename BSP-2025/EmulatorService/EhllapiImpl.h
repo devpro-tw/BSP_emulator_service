@@ -38,13 +38,14 @@ namespace HACL	// Host Access Class Library
         _vx vx ;
         char szTempDllName[255] ;
         char szDllFileName[255] ;
-        char szTempDllPath[255] ;
+        char szDllPath[255] ;
 
 		bool m_IsConnect;
 
 	protected:
-        char m_SessionStr[20];
+                char m_SessionStr[20];
 		char m_SessionId;
+                char m_SessionIdEnd;
 		int m_nFuncCode;	// Function Code
 		int m_nLength;
 		int m_nRetCode;		// Return Code

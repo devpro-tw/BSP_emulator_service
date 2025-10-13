@@ -10,10 +10,10 @@
 // ************************************************************************ //
 
 // C++ TLBWRTR : $Revision:   1.151.1.0.1.27  $
-// File generated on 6/24/2025 1:44:04 PM from Type Library described below.
+// File generated on 2025/10/13 ¤U¤È 10:20:37 from Type Library described below.
 
 // ************************************************************************  //
-// Type Lib: C:\Github\devpro_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb (1)
+// Type Lib: D:\GitHub\BSP_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb (1)
 // LIBID: {0C508D1F-AE7B-4F43-B4A9-4D9F5E5CC157}
 // LCID: 0
 // Helpfile: 
@@ -135,7 +135,7 @@ public:
                                                                         BSTR ParamsStr/*[in]*/, 
                                                                         BSTR TerminalID/*[in]*/) = 0; // [3]
   virtual int STDMETHODCALLTYPE GetResultRecordsetByIndex(int Index/*[in]*/, 
-                                                          Ador_tlb::_Recordset* Recordset/*[in]*/, 
+                                                          Ador_tlb::Recordset15* Recordset/*[in]*/, 
                                                           BSTR* RecordsetName/*[in,out]*/) = 0; // [4]
   virtual int STDMETHODCALLTYPE GetResultCount(void) = 0; // [5]
   virtual BSTR STDMETHODCALLTYPE GetTransactionID(void) = 0; // [6]
@@ -162,7 +162,7 @@ public:
                                                          BSTR ParamsStr/*[in]*/, 
                                                          BSTR TerminalID/*[in]*/);
   int             __fastcall GetResultRecordsetByIndex(int Index/*[in]*/, 
-                                                       Ador_tlb::_Recordset* Recordset/*[in]*/, 
+                                                       Ador_tlb::Recordset15* Recordset/*[in]*/, 
                                                        BSTR* RecordsetName/*[in,out]*/);
   int             __fastcall GetResultCount(void);
   BSTR            __fastcall GetTransactionID(void);
@@ -196,7 +196,7 @@ TCOMIEmulatorManagerT<T>::ExecService(BSTR ServiceName/*[in]*/, BSTR ParamsStr/*
 
 template <class T> int __fastcall
 TCOMIEmulatorManagerT<T>::GetResultRecordsetByIndex(int Index/*[in]*/, 
-                                                    Ador_tlb::_Recordset* Recordset/*[in]*/, 
+                                                    Ador_tlb::Recordset15* Recordset/*[in]*/, 
                                                     BSTR* RecordsetName/*[in,out]*/)
 {
   return (*this)->GetResultRecordsetByIndex(Index, Recordset, RecordsetName);
