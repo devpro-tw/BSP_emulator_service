@@ -666,7 +666,7 @@ public:
         GetParamsN( tsParams ) ;
         //s_cs->Enter();
         //EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
-        s_cs->Leave();
+        //s_cs->Leave();
         m_Ehllapi = new EhllapiImpl( tsParams->Values["DLLPATH"].c_str() ) ;
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
         m_ScreenTextFormat = 0 ;

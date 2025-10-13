@@ -26,21 +26,23 @@ namespace HACL	// Host Access Class Library
 // Initialize api library
 bool EhllapiImpl::Initialize( char * dllpath )
 	{
-		if ( hLib == NULL ) {
-            sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
-            sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
-            //CopyFile( szDllFileName , szTempDllName , false ) ;
-            strcpy( szDllFileName , "c:\\tn3270nf\\PCSHLL32.DLL" );
-            hLib = LoadLibrary( szDllFileName );
-            if ( hLib != NULL ) {
-                assert(hLib);
-                vx = (_vx)GetProcAddress(hLib, "hllapi");
-                assert(vx);
-            }
-        }
-        DevproDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
+            DevproDebugString( AnsiString().sprintf("EhllapiImpl::EhllapiImpl DLLPath name = %s " , dllpath ).c_str());
+            if ( hLib == NULL ) {
 
-		return hLib != NULL;
+                //sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
+                //sprintf( szDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
+                //CopyFile( szDllFileName , szTempDllName , false ) ;
+                strcpy( szTempDllName , "c:\\tn3270nf\\PCSHLL32.DLL" );
+                hLib = LoadLibrary( szTempDllName );
+                if ( hLib != NULL ) {
+                        assert(hLib);
+                        vx = (_vx)GetProcAddress(hLib, "hllapi");
+                        assert(vx);
+                }
+            }
+            DevproDebugString( AnsiString().sprintf("Load DLL name = %s , Lib = %x , apiaddr = %x" , szTempDllName , hLib , vx ).c_str());
+
+            return hLib != NULL;
 	}
 
 	// release api library
@@ -58,12 +60,13 @@ bool EhllapiImpl::Initialize( char * dllpath )
 	EhllapiImpl::EhllapiImpl( char*dllpath  = "c:\\TN3270NF" )
 		:m_IsConnect(false), m_SessionId(0)
 	{
+                DevproDebugString( "EhllapiImpl::EhllapiImpl" ) ;
                 prevtick = 0 ;
 
-		strcpy(szTempDllPath,dllpath);
+		//strcpy(szDllPath,dllpath);
                 hLib = NULL ;
                 vx = NULL ;
-		Initialize( szTempDllPath );
+		Initialize( dllpath );
 	}
 
 	// Destruction
