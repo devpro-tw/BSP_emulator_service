@@ -668,7 +668,7 @@ public:
         //EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
         DevproDebugString( "new EhllapiImpl" ) ;
         //s_cs->Leave();
-        AnsiString dllpath = tsParams->Values["DLLPATH"] ;
+        AnsiString dllpath = "c:\\tn3270nf" ;
         m_Ehllapi = new EhllapiImpl( dllpath.c_str() ) ;
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
         m_ScreenTextFormat = 0 ;
