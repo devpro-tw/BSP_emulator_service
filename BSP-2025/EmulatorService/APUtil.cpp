@@ -18,7 +18,7 @@
 ECommLog * g_CommLog ;
 
 // ¬O§_¬° Debug Mode
-bool gIsDebugMode = false ;
+bool gIsDebugMode = true ;
 
 // =========================================================================
 // Private Functions

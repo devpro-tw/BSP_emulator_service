@@ -27,9 +27,10 @@ namespace HACL	// Host Access Class Library
 bool EhllapiImpl::Initialize( char * dllpath )
 	{
 		if ( hLib == NULL ) {
-            sprintf( szDllFileName , "%s\\%s" , dllpath && strlen(dllpath) ? dllpath : "." , "PCSHLL32.DLL") ;
+            sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
             sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
             CopyFile( szDllFileName , szTempDllName , false ) ;
+
             hLib = LoadLibrary( szDllFileName );
             if ( hLib != NULL ) {
                 assert(hLib);
@@ -54,14 +55,14 @@ bool EhllapiImpl::Initialize( char * dllpath )
 	}
 
 	// Construction
-	EhllapiImpl::EhllapiImpl( char*dllpath)
+	EhllapiImpl::EhllapiImpl( char*dllpath  = "c:\\TN3270NF" )
 		:m_IsConnect(false), m_SessionId(0)
 	{
-        prevtick = 0 ;
-        
+                prevtick = 0 ;
+
 		strcpy(szTempDllPath,dllpath);
-        hLib = NULL ;
-        vx = NULL ;
+                hLib = NULL ;
+                vx = NULL ;
 		Initialize( szTempDllPath );
 	}
 

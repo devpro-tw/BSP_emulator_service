@@ -34,7 +34,7 @@ namespace HACL	// Host Access Class Library
 		//static HINSTANCE hLib;
 		//static _vx vx;
         DWORD prevtick ;
-        HINSTANCE hLib;
+        HINSTANCE hLib ;
         _vx vx ;
         char szTempDllName[255] ;
         char szDllFileName[255] ;
