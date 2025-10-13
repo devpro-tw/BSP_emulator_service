@@ -29,7 +29,7 @@ bool EhllapiImpl::Initialize( char * dllpath )
 		if ( hLib == NULL ) {
             sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
             sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
-            CopyFile( szDllFileName , szTempDllName , false ) ;
+            //CopyFile( szDllFileName , szTempDllName , false ) ;
             strcpy( szDllFileName , "c:\\tn3270nf\\PCSHLL32.DLL" );
             hLib = LoadLibrary( szDllFileName );
             if ( hLib != NULL ) {
