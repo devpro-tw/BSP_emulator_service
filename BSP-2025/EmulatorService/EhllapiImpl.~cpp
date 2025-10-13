@@ -27,6 +27,7 @@ namespace HACL	// Host Access Class Library
 bool EhllapiImpl::Initialize( char * dllpath )
 	{
             DevproDebugString( AnsiString().sprintf("EhllapiImpl::EhllapiImpl DLLPath name = %s " , dllpath ).c_str());
+
             if ( hLib == NULL ) {
 
                 //sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
@@ -57,10 +58,10 @@ bool EhllapiImpl::Initialize( char * dllpath )
 	}
 
 	// Construction
-	EhllapiImpl::EhllapiImpl( char*dllpath  = "c:\\TN3270NF" )
+	EhllapiImpl::EhllapiImpl( char*dllpath )
 		:m_IsConnect(false), m_SessionId(0)
 	{
-                DevproDebugString( "EhllapiImpl::EhllapiImpl" ) ;
+                DevproDebugString( AnsiString().sprintf( "EhllapiImpl::EhllapiImpl , %s" ,dllpath )) ;
                 prevtick = 0 ;
 
 		//strcpy(szDllPath,dllpath);

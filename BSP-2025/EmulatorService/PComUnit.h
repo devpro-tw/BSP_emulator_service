@@ -663,7 +663,7 @@ public:
     {
         DevproDebugString( "new CEHLLEmulator" ) ;
         TStrings *tsParams = new TStringList ;
-        ///GetParamsN( tsParams ) ;
+        GetParamsN( tsParams ) ;
         //s_cs->Enter();
         //EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
         DevproDebugString( "new EhllapiImpl" ) ;
