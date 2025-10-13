@@ -663,9 +663,10 @@ public:
     {
         DevproDebugString( "new CEHLLEmulator" ) ;
         TStrings *tsParams = new TStringList ;
-        GetParamsN( tsParams ) ;
+        ///GetParamsN( tsParams ) ;
         //s_cs->Enter();
         //EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
+        DevproDebugString( "new EhllapiImpl" ) ;
         //s_cs->Leave();
         m_Ehllapi = new EhllapiImpl( tsParams->Values["DLLPATH"].c_str() ) ;
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
