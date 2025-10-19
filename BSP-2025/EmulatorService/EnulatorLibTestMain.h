@@ -16,6 +16,10 @@ __published:	// IDE-managed Components
     TButton *Button2;
     TTimer *Timer1;
     TCheckBox *CheckBox1;
+    TEdit *Edit1;
+    TEdit *Edit2;
+    TEdit *Edit3;
+    TEdit *Edit4;
     void __fastcall Button1Click(TObject *Sender);
     void __fastcall Button2Click(TObject *Sender);
     void __fastcall Timer1Timer(TObject *Sender);

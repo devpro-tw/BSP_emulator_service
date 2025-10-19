@@ -3,7 +3,7 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="..\Bin\EmulatorLibTest.exe"/>
+    <PROJECT value=".\Bin\EmulatorLibTest.exe"/>
     <OBJFILES value="EmulatorLibTest.obj EnulatorLibTestMain.obj EmuScreenUtil.obj 
       EmuServiceUtil.obj PComUnit.obj ServiceUtil.obj APUtil.obj base64.obj 
       CustomService.obj ECLEmulator.obj EhllapiError.obj EhllapiImpl.obj 
@@ -14,10 +14,8 @@
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) EnulatorLibTestMain.dfm EStepDebug.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib 
-      vcl.lib rtl.lib"/>
-    <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib bdertl.lib vclx.lib tee.lib adortl.lib 
-      "/>
+    <LIBRARIES value="adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib bdertl.lib vclx.lib tee.lib adortl.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi dbrtl.bpi adortl.bpi vcldb.bpi bdertl.bpi 
       vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi visualclx.bpi visualdbclx.bpi 
       dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
@@ -87,7 +85,7 @@ AutoIncBuild=1
 MajorVer=2
 MinorVer=0
 Release=1
-Build=0
+Build=3
 Debug=0
 PreRelease=0
 Special=0
@@ -99,7 +97,7 @@ CodePage=950
 [Version Info Keys]
 CompanyName=
 FileDescription=
-FileVersion=2.0.1.0
+FileVersion=2.0.1.3
 InternalName=
 LegalCopyright=
 LegalTrademarks=
@@ -191,12 +189,13 @@ Item2=-d
 Item3=-package e:\Nuance\Package\FL
 
 [HistoryLists\hlFinalOutputDir]
-Count=5
-Item0=..\Bin\
-Item1=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug\
-Item2=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug
-Item3=../Bin\
-Item4=../Bin
+Count=6
+Item0=.\Bin\
+Item1=..\Bin\
+Item2=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug\
+Item3=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug
+Item4=../Bin\
+Item5=../Bin
 
 [Debugging]
 DebugSourceDirs=$(GW_TCP);$(BCB)\source\vcl

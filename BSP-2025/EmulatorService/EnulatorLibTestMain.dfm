@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 137
-  Top = 247
-  Width = 490
+  Left = 299
+  Top = 260
+  Width = 420
   Height = 224
   Caption = 'Form1'
   Color = clBtnFace
@@ -14,35 +14,66 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Button1: TButton
-    Left = 104
+    Left = 280
     Top = 40
-    Width = 145
+    Width = 105
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Init'
     TabOrder = 0
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 104
+    Left = 280
     Top = 80
-    Width = 145
+    Width = 105
     Height = 25
-    Caption = 'Button2'
+    Caption = 'Exec'
     TabOrder = 1
     OnClick = Button2Click
   end
   object CheckBox1: TCheckBox
-    Left = 24
-    Top = 16
+    Left = 288
+    Top = 128
     Width = 97
     Height = 17
-    Caption = 'CheckBox1'
+    Caption = 'AutoTest'
     TabOrder = 2
     OnClick = CheckBox1Click
   end
+  object Edit1: TEdit
+    Left = 32
+    Top = 40
+    Width = 217
+    Height = 21
+    TabOrder = 3
+    Text = 'DLLPATH=C:\\TN5250NF\nSESSIONID=A\nLOGENCODING=0'
+  end
+  object Edit2: TEdit
+    Left = 32
+    Top = 80
+    Width = 217
+    Height = 21
+    TabOrder = 4
+    Text = 'PCIC-2'
+  end
+  object Edit3: TEdit
+    Left = 32
+    Top = 112
+    Width = 217
+    Height = 21
+    TabOrder = 5
+    Text = 'ORGANIZATION=001;CUSTOMER=A111313439'
+  end
+  object Edit4: TEdit
+    Left = 32
+    Top = 144
+    Width = 217
+    Height = 21
+    TabOrder = 6
+    Text = 'A'
+  end
   object Timer1: TTimer
     OnTimer = Timer1Timer
-    Left = 24
-    Top = 48
+    Left = 352
   end
 end
