@@ -1,1 +1,2 @@
 regsvr32 EmulatorServiceProject.dll
+pause

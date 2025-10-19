@@ -32,8 +32,8 @@ bool EhllapiImpl::Initialize( char * dllpath )
 
                 //sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
                 //sprintf( szDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
-                //CopyFile( szDllFileName , szTempDllName , false ) ;
-                strcpy( szTempDllName , "c:\\tn3270nf\\PCSHLL32.DLL" );
+                CopyFile( szDllFileName , szTempDllName , false ) ;
+                //strcpy( szTempDllName , "c:\\tn3270nf\\PCSHLL32.DLL" );
                 hLib = LoadLibrary( szTempDllName );
                 if ( hLib != NULL ) {
                         assert(hLib);
@@ -59,10 +59,13 @@ bool EhllapiImpl::Initialize( char * dllpath )
 
 	// Construction
 	EhllapiImpl::EhllapiImpl( char*dllpath )
-	   /// :m_IsConnect(false), m_SessionId(0)
+	   :m_IsConnect(false), m_SessionId(0)
 	{
         m_IsConnect = false ;
         m_SessionId = 0 ;
+        m_SessionStr[0]=0;
+        m_SessionStr[1]=0;
+        m_SessionStr[2]=0;
         DevproDebugString( AnsiString().sprintf( "EhllapiImpl::EhllapiImpl " ).c_str()) ;
         prevtick = 0 ;
 

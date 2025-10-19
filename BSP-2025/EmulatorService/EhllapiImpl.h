@@ -43,9 +43,8 @@ namespace HACL	// Host Access Class Library
 		bool m_IsConnect;
 
 	protected:
-                char m_SessionStr[20];
+        char m_SessionStr[20];
 		char m_SessionId;
-                char m_SessionIdEnd;
 		int m_nFuncCode;	// Function Code
 		int m_nLength;
 		int m_nRetCode;		// Return Code

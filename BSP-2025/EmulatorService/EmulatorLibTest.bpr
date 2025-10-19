@@ -3,7 +3,7 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug\EmulatorLibTest.exe"/>
+    <PROJECT value=".\Bin\EmulatorLibTest.exe"/>
     <OBJFILES value="EmulatorLibTest.obj EnulatorLibTestMain.obj EmuScreenUtil.obj 
       EmuServiceUtil.obj PComUnit.obj ServiceUtil.obj APUtil.obj base64.obj 
       CustomService.obj ECLEmulator.obj EhllapiError.obj EhllapiImpl.obj 
@@ -14,17 +14,15 @@
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) EnulatorLibTestMain.dfm EStepDebug.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="EngsoundC6.lib adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib 
-      vcl.lib rtl.lib"/>
-    <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib bdertl.lib vclx.lib tee.lib adortl.lib 
-      EngsoundC6.lib"/>
+    <LIBRARIES value="adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib bdertl.lib vclx.lib tee.lib adortl.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi dbrtl.bpi adortl.bpi vcldb.bpi bdertl.bpi 
       vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi visualclx.bpi visualdbclx.bpi 
       dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
       inetdbbde.bpi inetdbxpress.bpi inetdb.bpi webdsnap.bpi bcbie.bpi 
       websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
       bcb2kaxserver.bpi Ilcorp60.bpi qrpt.bpi indy.bpi ibxpress.bpi nmfast.bpi 
-      dss.bpi teeui.bpi teedb.bpi tee.bpi teeqr.bpi EngsoundC6.bpi"/>
+      dss.bpi teeui.bpi teedb.bpi tee.bpi teeqr.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
@@ -191,11 +189,13 @@ Item2=-d
 Item3=-package e:\Nuance\Package\FL
 
 [HistoryLists\hlFinalOutputDir]
-Count=4
-Item0=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug
+Count=6
+Item0=.\Bin\
 Item1=..\Bin\
-Item2=../Bin\
-Item3=../Bin
+Item2=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug\
+Item3=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug
+Item4=../Bin\
+Item5=../Bin
 
 [Debugging]
 DebugSourceDirs=$(GW_TCP);$(BCB)\source\vcl

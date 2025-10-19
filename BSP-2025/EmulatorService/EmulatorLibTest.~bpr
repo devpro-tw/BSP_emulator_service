@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\Bin\EmulatorLibTest.exe"/>
+    <OBJFILES value="EmulatorLibTest.obj EnulatorLibTestMain.obj EmuScreenUtil.obj 
+      EmuServiceUtil.obj PComUnit.obj ServiceUtil.obj APUtil.obj base64.obj 
+      CustomService.obj ECLEmulator.obj EhllapiError.obj EhllapiImpl.obj 
+      EmuInfoBase.obj EStepDebug.obj"/>
+    <RESFILES value="EmulatorLibTest.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) EnulatorLibTestMain.dfm EStepDebug.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="adortl.lib tee.lib vclx.lib bdertl.lib vcldb.lib dbrtl.lib 
+      vcl.lib rtl.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib dbrtl.lib vcldb.lib bdertl.lib vclx.lib tee.lib adortl.lib 
+      "/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi dbrtl.bpi adortl.bpi vcldb.bpi bdertl.bpi 
+      vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi webdsnap.bpi bcbie.bpi 
+      websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      bcb2kaxserver.bpi Ilcorp60.bpi qrpt.bpi indy.bpi ibxpress.bpi nmfast.bpi 
+      dss.bpi teeui.bpi teedb.bpi tee.bpi teeqr.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_VIS_NOLIB"/>
+    <MAINSOURCE value="EmulatorLibTest.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorService;$(GW_TCP);$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorService;$(GW_TCP);$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\lib\psdk"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -IC:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorService -I$(GW_TCP) 
+      -I$(BCB)\Lib -I$(BCB)\include -I$(BCB)\include\vcl -I$(BCB)\imports 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="EmulatorLibTest.res" FORMNAME="" UNITNAME="EmulatorLibTest.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EmulatorLibTest.cpp" FORMNAME="" UNITNAME="EmulatorLibTest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EnulatorLibTestMain.cpp" FORMNAME="Form1" UNITNAME="EnulatorLibTestMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EmuScreenUtil.cpp" FORMNAME="" UNITNAME="EmuScreenUtil.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EmuServiceUtil.cpp" FORMNAME="" UNITNAME="EmuServiceUtil.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PComUnit.cpp" FORMNAME="" UNITNAME="PComUnit.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ServiceUtil.cpp" FORMNAME="" UNITNAME="ServiceUtil.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="APUtil.cpp" FORMNAME="" UNITNAME="APUtil.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="base64.cpp" FORMNAME="" UNITNAME="base64.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CustomService.cpp" FORMNAME="" UNITNAME="CustomService.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ECLEmulator.cpp" FORMNAME="" UNITNAME="ECLEmulator.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EhllapiError.cpp" FORMNAME="" UNITNAME="EhllapiError.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EhllapiImpl.cpp" FORMNAME="" UNITNAME="EhllapiImpl.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EmuInfoBase.cpp" FORMNAME="" UNITNAME="EmuInfoBase.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="EStepDebug.cpp" FORMNAME="dlgStepDebug" UNITNAME="EStepDebug" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=0
+Release=1
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=2.0.1.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=2.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=30
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorService;$(GW_TCP);$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports
+Item1=$(GW_TCP);$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports
+Item2=R:\VCL\ESMC.12\Source;R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;$(GW_TCP);$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports
+Item3=R:\VCL\ESMC.12\Source;R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC.12\include;$(ESVCL)\ESMC.12\include\winlib
+Item4=R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC.12\include;$(ESVCL)\ESMC.12\include\winlib
+Item5=R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC.12\include
+Item6=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC.12\include
+Item7=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound;$(ESVCL)\ESMC\include
+Item8=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound;$(ESVCL)\ESMC\include\
+Item9=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound
+Item10=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound
+Item11=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound
+Item12=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound
+Item13=C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\gwutil;$(ESVCL)\ESMC\lib;D:\DevLib\Engsound
+Item14=C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\gwutil;$(ESVCL)\ESMC\lib
+Item15=C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib
+Item16=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports;$(BCB)\include\winlib
+Item17=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports
+Item18=C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\imports
+Item19=C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10;$(BCB)\imports
+Item20=$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10;$(BCB)\imports
+Item21=$(BCB)\Lib;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10
+Item22=d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10
+Item23=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10\
+Item24=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10Item1=$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10Item1=$(BCB)\include;$(BCB)\include\vcl;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\include;$(BCB)\include\vcl;R:\VCL\Dream\Out_C4\units\;W:\LIB\LIB10Item1=$(BCB)\include;$(BCB)\include\vcl;R:\VCL\Dream\Out_C4\units\;W:\LIB\LIB10
+Item25=
+Item26=
+Item27=
+Item28=
+Item29=
+
+[HistoryLists\hlLibraryPath]
+Count=30
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorService;$(GW_TCP);$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\lib\psdk
+Item1=$(GW_TCP);$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\lib\psdk
+Item2=R:\VCL\ESMC.12\Source;R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;$(GW_TCP);$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\lib\psdk
+Item3=R:\VCL\ESMC.12\Source;R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC.12\include
+Item4=R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC.12\include
+Item5=R:\VCL\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC\include
+Item6=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC.12;$(ESVCL)\ESMC.12\Imports;$(ESVCL)\ESMC.12\Source;$(ESVCL)\ESMC\include
+Item7=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;$(ESVCL)\ESMC\include
+Item8=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib;$(ESVCL)\ESMC\include\
+Item9=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib
+Item10=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib
+Item11=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\include\gwutil;$(ESVCL)\ESMC\lib
+Item12=D:\ESMC\gwutil;D:\ESMC\Imports;C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\gwutil;$(ESVCL)\ESMC\lib
+Item13=C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk;$(ESVCL)\ESMC;$(ESVCL)\ESMC\Imports;$(ESVCL)\ESMC\gwutil;$(ESVCL)\ESMC\lib
+Item14=C:\Program Files\Borland\CBuilder6\Include\gwutil;C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk
+Item15=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\lib\psdk
+Item16=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib;$(BCB)\psdk
+Item17=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib;$(BCB)\include\winlib
+Item18=C:\Program Files\Borland\CBuilder6\Projects;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib
+Item19=C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\lib
+Item20=C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10;$(BCB)\Projects\lib
+Item21=C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10;$(BCB)\Project\lib
+Item22=C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Include\Atl;d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10
+Item23=d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10
+Item24=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10\
+Item25=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects\;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10Item1=d:\Program Files\Borland\CBuilder4\Projects;$(BCB)\lib\obj;$(BCB)\lib;W:\LIB\LIB10
+Item26=
+Item27=
+Item28=
+Item29=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(GW_TCP);$(BCB)\source\vcl
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlRunParameters]
+Count=4
+Item0=-v -d
+Item1=-v
+Item2=-d
+Item3=-package e:\Nuance\Package\FL
+
+[HistoryLists\hlFinalOutputDir]
+Count=5
+Item0=..\Bin\
+Item1=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug\
+Item2=C:\WS\SRC\FUBON\Source\EnablementServer2013\EmulatorServiceWrapper\TestEmulatorServiceWrapper\bin\Debug
+Item3=../Bin\
+Item4=../Bin
+
+[Debugging]
+DebugSourceDirs=$(GW_TCP);$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
