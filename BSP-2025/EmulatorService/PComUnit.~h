@@ -674,7 +674,7 @@ public:
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
         m_ScreenTextFormat = 0 ;
         DevproDebugString( "new CEHLLEmulator exit" ) ;
-        delete tsParams ;
+
     }
 
     virtual ~CEHLLEmulator()

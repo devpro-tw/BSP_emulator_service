@@ -10,7 +10,7 @@
 // ************************************************************************ //
 
 // C++ TLBWRTR : $Revision:   1.151.1.0.1.27  $
-// File generated on 2025/10/19 ¤U¤È 10:40:45 from Type Library described below.
+// File generated on 2025/10/19 ¤U¤È 11:38:02 from Type Library described below.
 
 // ************************************************************************  //
 // Type Lib: D:\GitHub\BSP_emulator_service\BSP-2025\EmulatorService\EmulatorService.tlb (1)
@@ -135,7 +135,7 @@ public:
                                                                         BSTR ParamsStr/*[in]*/, 
                                                                         BSTR TerminalID/*[in]*/) = 0; // [3]
   virtual int STDMETHODCALLTYPE GetResultRecordsetByIndex(int Index/*[in]*/, 
-                                                          Ador_tlb::_Recordset* Recordset/*[in]*/, 
+                                                          Ador_tlb::Recordset15* Recordset/*[in]*/, 
                                                           BSTR* RecordsetName/*[in,out]*/) = 0; // [4]
   virtual int STDMETHODCALLTYPE GetResultCount(void) = 0; // [5]
   virtual BSTR STDMETHODCALLTYPE GetTransactionID(void) = 0; // [6]
@@ -162,7 +162,7 @@ public:
                                                          BSTR ParamsStr/*[in]*/, 
                                                          BSTR TerminalID/*[in]*/);
   int             __fastcall GetResultRecordsetByIndex(int Index/*[in]*/, 
-                                                       Ador_tlb::_Recordset* Recordset/*[in]*/, 
+                                                       Ador_tlb::Recordset15* Recordset/*[in]*/, 
                                                        BSTR* RecordsetName/*[in,out]*/);
   int             __fastcall GetResultCount(void);
   BSTR            __fastcall GetTransactionID(void);
@@ -196,7 +196,7 @@ TCOMIEmulatorManagerT<T>::ExecService(BSTR ServiceName/*[in]*/, BSTR ParamsStr/*
 
 template <class T> int __fastcall
 TCOMIEmulatorManagerT<T>::GetResultRecordsetByIndex(int Index/*[in]*/, 
-                                                    Ador_tlb::_Recordset* Recordset/*[in]*/, 
+                                                    Ador_tlb::Recordset15* Recordset/*[in]*/, 
                                                     BSTR* RecordsetName/*[in,out]*/)
 {
   return (*this)->GetResultRecordsetByIndex(Index, Recordset, RecordsetName);
