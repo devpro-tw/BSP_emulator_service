@@ -66,7 +66,7 @@ namespace HACL	// Host Access Class Library
 
 	public:
 		// constructor
-		EhllapiImpl( char*);
+		EhllapiImpl( TStrings * initparams );
 		// destructor
 		virtual ~EhllapiImpl();
 		// COPY_OIA

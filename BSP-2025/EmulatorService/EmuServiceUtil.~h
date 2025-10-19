@@ -123,7 +123,7 @@ protected :
 public :
     //AnsiString AppPath ;
     CDataSets * m_DataSets ;
-    CEmuService( TStrings * Params ) : CEHLLEmulator( /*Params*/ )
+    CEmuService( TStrings * Params ) : CEHLLEmulator( Params )
     {   try  {
 
         DevproDebugString( "new CEmuService" ) ;

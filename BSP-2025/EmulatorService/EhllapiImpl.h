@@ -66,7 +66,7 @@ namespace HACL	// Host Access Class Library
 
 	public:
 		// constructor
-		EhllapiImpl( char*);
+		EhllapiImpl( TStrings * initparams );
 		// destructor
 		virtual ~EhllapiImpl();
 		// COPY_OIA
@@ -126,7 +126,7 @@ namespace HACL	// Host Access Class Library
 		// QUERY_FIELD_ATTR
 		int FieldAttribute(int row, int col);
 		// Initialize api library
-                bool Initialize( char * dllpath );
+                bool Initialize( TStrings * initparams );
 		// release api library
                 void UnInitialize(void);
 	};

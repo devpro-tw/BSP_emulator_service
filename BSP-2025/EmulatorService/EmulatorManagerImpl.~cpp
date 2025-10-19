@@ -96,7 +96,7 @@ int STDMETHODCALLTYPE TEmulatorManagerImpl::GetResultCount()
 }
 
 int STDMETHODCALLTYPE TEmulatorManagerImpl::GetResultRecordsetByIndex(
-  int Index, Aor_tlb::Recordset15* Recordset, BSTR* RecordsetName)
+  int Index, Ador_tlb::Recordset15* Recordset, BSTR* RecordsetName)
 {
     AnsiString fname = m_AppPath + GetTempFile( "adtg" ) ; // m_AppPath + "rs1-temp.adtg" ;
     TVariant v = WideString(fname.c_str());

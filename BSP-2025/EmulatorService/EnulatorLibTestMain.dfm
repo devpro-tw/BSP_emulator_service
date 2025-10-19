@@ -46,7 +46,7 @@ object Form1: TForm1
     Width = 217
     Height = 21
     TabOrder = 3
-    Text = 'DLLPATH=C:\\TN5250NF\nSESSIONID=A\nLOGENCODING=0'
+    Text = 'DLLPATH=C:\\TN3270NF;SESSIONID=A;LOGENCODING=0'
   end
   object Edit2: TEdit
     Left = 32

@@ -21,7 +21,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
      TStrings * m_Params = new TStringList();
-     m_Params->Text = Edit1->Text ;
+     m_Params->Text = AnsiReplaceStr(Edit1->Text,";","\n");
      m_emu_executor = new CEmuService( m_Params );
 }
 //---------------------------------------------------------------------------

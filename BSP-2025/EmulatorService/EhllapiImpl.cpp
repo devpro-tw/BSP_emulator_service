@@ -24,16 +24,21 @@ namespace HACL	// Host Access Class Library
 //////////////////////////////////////////////////////////////////////
 
 // Initialize api library
-bool EhllapiImpl::Initialize( char * dllpath )
+bool EhllapiImpl::Initialize( TStrings * initparams )
 	{
-            DevproDebugString( AnsiString().sprintf("EhllapiImpl::EhllapiImpl DLLPath name = %s " , dllpath ).c_str());
+            AnsiString dllpath = initparams->Values["DLLPATH"];
+            AnsiString terminalid = initparams->Values["SESSIONID"];
+
+            DevproDebugString( AnsiString().sprintf("EhllapiImpl::EhllapiImpl DLLPath name = %s " , dllpath.c_str() ).c_str());
 
             if ( hLib == NULL ) {
 
-                //sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
-                //sprintf( szDllName , "%s\\PCtmp%04X.dll" , dllpath , GetCurrentThreadId() ) ;
+                sprintf( szDllFileName , "%s\\%s" , dllpath , "PCSHLL32.DLL") ;
+                if ( terminalid.Length() )
+                    sprintf( szTempDllName , "%s\\SESSION-%s.dll" , dllpath.c_str() , terminalid.c_str() ) ;
+                else
+                    sprintf( szTempDllName , "%s\\PCtmp%04X.dll" , dllpath.c_str() , GetCurrentThreadId() ) ;
                 CopyFile( szDllFileName , szTempDllName , false ) ;
-                //strcpy( szTempDllName , "c:\\tn3270nf\\PCSHLL32.DLL" );
                 hLib = LoadLibrary( szTempDllName );
                 if ( hLib != NULL ) {
                         assert(hLib);
@@ -58,9 +63,10 @@ bool EhllapiImpl::Initialize( char * dllpath )
 	}
 
 	// Construction
-	EhllapiImpl::EhllapiImpl( char*dllpath )
+	EhllapiImpl::EhllapiImpl( TStrings * initparams )
 	   :m_IsConnect(false), m_SessionId(0)
 	{
+
         m_IsConnect = false ;
         m_SessionId = 0 ;
         m_SessionStr[0]=0;
@@ -69,10 +75,9 @@ bool EhllapiImpl::Initialize( char * dllpath )
         DevproDebugString( AnsiString().sprintf( "EhllapiImpl::EhllapiImpl " ).c_str()) ;
         prevtick = 0 ;
 
-		//strcpy(szDllPath,dllpath);
-                hLib = NULL ;
-                vx = NULL ;
-		Initialize( dllpath );
+        hLib = NULL ;
+        vx = NULL ;
+		Initialize( initparams );
 	}
 
 	// Destruction

@@ -21,13 +21,13 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
      TStrings * m_Params = new TStringList();
-     m_Params->Text = "DLLPATH=C:\\TN5250NF\nSESSIONID=A\nLOGENCODING=0" ;
-    m_emu_executor = new CEmuService( m_Params );
+     m_Params->Text = AnsiReplaceStr(Edit1->Text,";","\n");
+     m_emu_executor = new CEmuService( m_Params );
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button2Click(TObject *Sender)
 {
-    m_emu_executor->ExecService( "PCIC-2" , "ORGANIZATION=001;CUSTOMER=A111313439" , "A" , true , btemp , NULL ) ;
+    m_emu_executor->ExecService( Edit2->Text.c_str() , Edit3->Text.c_str(),Edit4->Text.c_str() , true , btemp , NULL ) ;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Timer1Timer(TObject *Sender)

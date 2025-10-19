@@ -656,24 +656,25 @@ class CEHLLEmulator : public CBaseEmulator {
 protected:
     EhllapiImpl * m_Ehllapi ;
     TIniFile * m_keymaps ;
+    TStrings * m_Params  ;
 private :
 
 public:
-    CEHLLEmulator()
+    CEHLLEmulator( TStrings *tsParams  )
     {
         DevproDebugString( "new CEHLLEmulator" ) ;
-        TStrings *tsParams = new TStringList ;
-        /////GetParamsN( tsParams ) ;
+        m_Params = new TStringList();
+        m_Params->Text = tsParams->Text ;
+        //GetParamsN( tsParams ) ;
         //s_cs->Enter();
         //EhllapiImpl::Initialize( tsParams->Values["DLLPATH"].c_str() ) ;
         DevproDebugString( "new EhllapiImpl" ) ;
         //s_cs->Leave();
-        AnsiString dllpath = "c:\\tn3270nf" ;
-        m_Ehllapi = new EhllapiImpl( dllpath.c_str() ) ;
+        m_Ehllapi = new EhllapiImpl( m_Params) ;
         m_keymaps = new TIniFile( "./keymap.ini" ) ;
         m_ScreenTextFormat = 0 ;
         DevproDebugString( "new CEHLLEmulator exit" ) ;
-        delete tsParams ;
+
     }
 
     virtual ~CEHLLEmulator()
