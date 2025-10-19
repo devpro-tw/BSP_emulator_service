@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma link "EmulatorService_OCX"
+#pragma resource "*.dfm"
+TForm1 *Form1;
+TEmulatorManager * m_Emu ;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+
+        m_Emu = new  TEmulatorManager( this );
+        m_Emu->Init( WideString("C:\\TN3270NF") ) ;
+}
+//---------------------------------------------------------------------------
+ 

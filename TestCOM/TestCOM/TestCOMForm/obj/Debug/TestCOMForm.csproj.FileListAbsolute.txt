@@ -1,0 +1,12 @@
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\bin\Debug\TestCOMForm.exe.config
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\bin\Debug\TestCOMForm.exe
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\bin\Debug\TestCOMForm.pdb
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.csprojResolveAssemblyReference.cache
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\Interop.ADOR.dll
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\Interop.EmulatorService.dll
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.csproj.ResolveComReference.cache
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.Form1.resources
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.Properties.Resources.resources
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.csproj.GenerateResource.Cache
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.exe
+D:\GitHub\BSP_emulator_service\TestCOM\TestCOM\TestCOMForm\obj\Debug\TestCOMForm.pdb
