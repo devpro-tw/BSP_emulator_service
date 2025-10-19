@@ -794,7 +794,7 @@ public :
             AnsiString ScriptName = ServiceName ;
             ServiceBegin();
             if ( bNewSerice ) {
-                m_logger->StartService( ServiceName , m_SessionID ) ;
+                m_logger->StartService( ServiceName , SessionName ) ;
                 m_DataSets->ClearRecordset();
                 m_logger->WriteLog( "Service Start : Command = %s , Params = %s " , ServiceName.c_str() , ParamStr.c_str() );
                 DevproDebugString( AnsiString().sprintf("Service Start : Command = %s , Params = %s " , ServiceName.c_str() , ParamStr.c_str()).c_str() );
